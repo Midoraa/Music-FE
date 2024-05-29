@@ -1,0 +1,46 @@
+.footer-07{
+    background: #ffffff;
+    padding: 50px 0px;
+    border-top: 1px solid #bdbdbd;
+    a{
+        color: $primary;
+    }
+    p{
+        color: rgba(255,255,255,.3);
+    }
+    .logo{
+        width: 20vh;
+    }
+    .menu{
+        margin-bottom: 30px;
+        a{
+            color: rgba(0, 0, 0, 0.6);
+            margin: 0 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    }
+    .ftco-footer-social{
+        li{
+            list-style: none;
+            a{
+                background: transparent;
+            }
+            .logo {
+                width: 40px;
+                height: 40px;
+                padding: 7px;
+                border: 1px solid #00704a;
+                border-radius: 100%;
+                margin: 0px 10px;
+                transition: 500ms;
+                &:hover{
+                    border: 1px solid #00ffab;
+                }
+            }
+        }
+    }
+    .license a{
+        color: #00704a;
+    }
+}

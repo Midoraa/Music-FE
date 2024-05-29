@@ -1,0 +1,44 @@
+.rank{
+    .title-box{
+        text-align: center;
+        a{
+            color: #00704a;
+        }
+    }
+    .nav-link{
+        color: #00704a;
+    }
+    .nav-link.active{
+        color: white;
+        background: #00704a;
+    }
+    .list-song{
+        .list_chart_music{
+            float: left;
+            margin-bottom: 20px;
+            width: 100%;
+            .info_data{
+                .number{
+                    font-size: 20px;
+                    width: 40px;
+                    height: 40px;
+                    color: #00704a;
+                    text-align: center;
+                    align-self: center;
+                }
+                .info{
+                    h5{
+                        margin: 0;
+                        font-size: 14px;
+                    }
+                    p{
+                        margin: 0;
+                        font-size: small;
+                        color: gray;
+                    }
+                }
+            }
+
+        }
+    }
+}

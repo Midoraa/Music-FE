@@ -1,0 +1,42 @@
+const HOME_PAGE: IRouteConstant = {
+    href: '/',
+};
+const BXH_PAGE: IRouteConstant = {
+    href: '/bxh',
+};
+const SONG_DETAIL_PAGE: IRouteConstant = {
+    href: '/song/detail',
+};
+const PLAYLIST_PAGE: IRouteConstant = {
+    href: '/playlist',
+};
+const ACTIST_PAGE: IRouteConstant = {
+    href: '/playlist',
+};
+const LOGIN_PAGE: IRouteConstant = {
+    href: '/login',
+};
+const NOT_FOUND_PAGE: IRouteConstant = {
+    href: '/404',
+};
+
+export const CLIENT = {
+    HOME: HOME_PAGE,
+    BXH: BXH_PAGE,
+    SONG_DETAIL: SONG_DETAIL_PAGE,
+    PLAYLIST: PLAYLIST_PAGE,
+    ACTIST: ACTIST_PAGE,
+    LOGIN: LOGIN_PAGE,
+    NOT_FOUND: NOT_FOUND_PAGE,
+};
+
+const LOGIN_API: IRouteConstant = {
+    href: 'login',
+};
+const PROFILE_API: IRouteConstant = {
+    href: 'profile',
+};
+export const API = {
+    LOGIN: LOGIN_API,
+    PROFILE: PROFILE_API,
+};

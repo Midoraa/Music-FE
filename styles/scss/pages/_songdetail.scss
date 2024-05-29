@@ -1,0 +1,85 @@
+.song-detail__container{
+    .left-contents{
+        .title-box{
+            color: gray;
+        }
+        .song-container{
+            padding-top: 5px;
+            background: #d5d5d5;
+            .title-actions{
+                position: relative;
+                width: 300px;
+                padding: 10px 20px;
+                .icon-box{
+                    display: flex;
+                    margin-top: 20px;
+                    .icon{
+                        width: 25px;
+                        &:first-child{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                .played{
+                    position: absolute;
+                    font-size: 10px;
+                    color: gray;
+                    bottom: 0;
+                }
+            }
+            .song-image{
+                display: block;
+                width: 220px;
+                height: 220px;
+                object-fit: cover;
+                border-radius: 100%;
+                margin: 20px auto;
+                padding: 20px;
+                background: #00704a;
+                animation: rotate 10s linear infinite;
+            }
+            @keyframes rotate {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+            .rhap_main{
+                .rhap_progress-indicator{
+                    background: #00704a;
+                }
+                .iconify--mdi{
+                    color: #00704a;
+                }
+                .rhap_volume-indicator{
+                    background: #00704a;
+                }
+            }
+        }
+    }
+    .right-contents{
+        .title-next{
+            font-size: 16px;
+            color: #00704a;
+        }
+        .list-song-container{
+            .list-song{
+                .icon-list{
+                    width: 20px;
+                }
+                .task-music{
+                    width: 100%;
+                    padding-left: 10px;
+                    &:hover{
+                        background: #e5e5e5;
+                    }
+                    &:hover .song-title{
+                        color: #00704a;
+                    }
+                }
+            }
+        }
+    }
+}

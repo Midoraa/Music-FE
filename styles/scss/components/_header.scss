@@ -1,0 +1,38 @@
+$primary-color: #00704a;
+
+.main-header {
+    .navbar {
+        background-color: white;
+        border-bottom: 1px solid #cbcbcb;
+
+
+        .navbar-brand {
+            color: black;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+
+        .logo {
+            max-width: 70px;
+            margin-right: 10px;
+        }
+
+        .nav-link {
+            color: #474747;
+            font-weight: 500;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+
+        .navbar-toggler-icon {
+            filter: invert(1);
+        }
+
+        .icon{
+            max-width: 20px;
+            fill: #ced4da;
+        }
+    }
+}

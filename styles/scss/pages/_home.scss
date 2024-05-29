@@ -1,0 +1,119 @@
+.pages {
+    &__home {
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 1000px;
+        }
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .right-sidebar{
+
+        }
+
+        .left-contents{
+            padding: 0;
+            .title-box-key{
+                color: #00704a;
+                font-size: 1.75rem;
+            }
+            .contents{
+                .nhacviet{
+                    margin-bottom: 5px;
+                    ul{
+                        margin-top: 10px;
+                    }
+                    li{
+                        padding-right: 20px;
+                        padding-left: 0;
+                        .box-left-album{
+                            position: relative;
+                            display: inline-block;
+                            overflow: hidden;
+                            transition: 0.5s;
+                            .album-image {
+                                display: block;
+                                width: 100%;
+                                transition: opacity 0.5s ease;
+                            }
+
+                            .play-icon {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                width: 50%; // Adjust the size of the play icon
+                                opacity: 0;
+                                transition: opacity 0.3s ease;
+                                pointer-events: none;
+
+                                .play-icon-image {
+                                    width: 100%;
+                                }
+                            }
+
+                            &:hover {
+                                .album-image {
+                                    opacity: 0.5;
+                                }
+
+                                .play-icon {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                        .box-left-album:hover{
+                            background: #222222;
+                        }
+                        .info_album{
+                            h3{
+                                margin: 0;
+                            }
+                            p{
+                                color: grey;
+                                font-size: small;
+                            }
+                            p:hover{
+                                color: #00704a;
+                            }
+                        }
+                        .name_song{
+                            font-size: 15px;
+                            transition: 500ms;
+                        }
+                        .name_song:hover{
+                            color: #00704a;
+                        }
+                    }
+                    .listbaihat{
+                        .baihat{
+                            padding-right: 40px;
+                            .baihat-chitiet{
+                                padding-top: 10px;
+                                border-top: 1px solid #c9c9c9;
+                                .box-left-album2{
+                                    margin-right: 10px;
+                                    img{
+                                        width: 60px;
+                                        height: 60px;
+                                        object-fit: cover;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
