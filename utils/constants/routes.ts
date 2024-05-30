@@ -16,6 +16,9 @@ const ACTIST_PAGE: IRouteConstant = {
 const LOGIN_PAGE: IRouteConstant = {
     href: '/login',
 };
+const REGISTER_PAGE: IRouteConstant = {
+    href: '/register',
+};
 const NOT_FOUND_PAGE: IRouteConstant = {
     href: '/404',
 };
@@ -27,6 +30,7 @@ export const CLIENT = {
     PLAYLIST: PLAYLIST_PAGE,
     ACTIST: ACTIST_PAGE,
     LOGIN: LOGIN_PAGE,
+    REGISTERE:REGISTER_PAGE,
     NOT_FOUND: NOT_FOUND_PAGE,
 };
 
