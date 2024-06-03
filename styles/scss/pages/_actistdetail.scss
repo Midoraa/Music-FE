@@ -1,0 +1,151 @@
+.actist__detail-container{
+    .singer-top-cover{
+        width: 100%;
+        height: 287px;
+        background: #555555;
+        overflow: hidden;
+    }
+    .bg-singer-cover{
+        position: relative;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: inherit;
+            background-size: inherit;
+            background-position: inherit;
+            filter: blur(8px) brightness(50%);
+            z-index: 0;
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+            .main-info{
+                .left-info{
+                    align-self: center;
+                    text-align: center;
+                    .avatar{
+                        width: 120px;
+                        height: 120px;
+                        object-fit: cover;
+                        border-radius: 100%;
+                    }
+                    .name{
+                        font-size: 25px;
+                        color: white;
+                        font-weight: 300;
+                        margin-top: 10px;
+                    }
+                }
+                .right-image img {
+                    border-radius: 10px;
+                }
+            }
+        }
+
+    }
+    .actist-details__contents{
+        .title-box-key{
+            color: #00704a;
+        }
+        li{
+            padding-right: 20px;
+            padding-left: 0;
+            .box-left-album{
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+                transition: 0.5s;
+                .album-image {
+                    display: block;
+                    width: 100%;
+                    transition: opacity 0.5s ease;
+                }
+
+                .play-icon {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 50%; // Adjust the size of the play icon
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                    pointer-events: none;
+
+                    .play-icon-image {
+                        width: 100%;
+                    }
+                }
+
+                &:hover {
+                    .album-image {
+                        opacity: 0.5;
+                    }
+
+                    .play-icon {
+                        opacity: 1;
+                    }
+                }
+            }
+            .box-left-album:hover{
+                background: #222222;
+            }
+            .info_album{
+                h3{
+                    margin: 0;
+                }
+                p{
+                    color: grey;
+                    font-size: small;
+                }
+                p:hover{
+                    color: #00704a;
+                }
+            }
+            .name_song{
+                font-size: 15px;
+                transition: 500ms;
+            }
+            .name_song:hover{
+                color: #00704a;
+            }
+        }
+        .listbaihat{
+            .baihat{
+                padding-right: 40px;
+                .baihat-chitiet{
+                    padding-top: 10px;
+                    border-top: 1px solid #c9c9c9;
+                    .box-left-album2{
+                        margin-right: 10px;
+                        img{
+                            width: 60px;
+                            height: 60px;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+        .pagination{
+            justify-content: center;
+            .page-item{
+                .page-link{
+                    color: #00704a;
+                }
+            }
+            .page-item.active{
+                .page-link{
+                    color: white;
+                    background: #00704a;
+                }
+            }
+        }
+    }
+}

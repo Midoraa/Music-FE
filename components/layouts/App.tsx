@@ -8,9 +8,10 @@ import Footer from '@components/layouts/Footer';
 
 import { useDispatch } from 'react-redux';
 import { setLocale, setModal } from '@redux/actions';
+import { http, routes } from '@utils/constants';
 
 const App: IAppComponent<IAppComponentProps> = (props) => {
-    const { children } = props;
+    const { children, statusCode } = props;
     const router = useRouter();
     const dispatch = useDispatch();
     const [state, setState] = useState<IAppComponentState>({
@@ -50,13 +51,23 @@ const App: IAppComponent<IAppComponentProps> = (props) => {
         setTimeout(() => window.scrollTo(0, 0), 5);
     };
 
+    const nodeHeaderFooterPath = [
+        routes.CLIENT.LOGIN.href,
+    ];
+    const noAuthPath = [
+        // bắt phân quyền admin
+        routes.CLIENT.NOT_FOUND.href,
+    ];
+    const isNotFoundPage = statusCode === http.NOT_FOUND_CODE;
+    const isShowComponent = !noAuthPath.includes(pathname) && !isNotFoundPage;
+
     return (
         <div key={reloadKey} className="components__app">
             <Loader />
             <Modal />
-            <Header />
+            <Header isShow={isShowComponent && !nodeHeaderFooterPath.includes(router.pathname)} />
             {children}
-            <Footer />
+            <Footer isShow={isShowComponent && !nodeHeaderFooterPath.includes(router.pathname)} />
         </div>
     );
 };

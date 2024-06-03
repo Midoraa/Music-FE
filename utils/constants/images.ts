@@ -6,6 +6,7 @@ export const ICON_RIGHT_ARROW = '/assets/icons/right-arrow.svg';
 export const ICON_LEFT_ARROW = '/assets/icons/left-arrow.svg';
 export const ICON_SEARCH = '/assets/icons/search.svg'
 export const WEB_LOGO = '/assets/icons/logo_music.jpg';
+export const MAIN_LOGO = '/assets/icons/logo.svg';
 export const ICON_FACEBOOK = '/assets/icons/facebook.svg'
 export const ICON_INSTA = '/assets/icons/insta.svg'
 export const ICON_TWITTER = '/assets/icons/twitter.svg'
@@ -23,6 +24,8 @@ export const BANNER_1 = '/assets/images/img.png'
 export const BANNER_2 = '/assets/images/img_1.png'
 export const BANNER_3 = '/assets/images/img_2.png'
 export const BANNER_4 = '/assets/images/img_3.png'
+
+export const BACKGROUND= '/assets/images/background.png'
 
 
 export const AVATAR_1 = '/assets/images/avatar/balad.jpg'

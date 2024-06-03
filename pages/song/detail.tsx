@@ -54,6 +54,9 @@ const SongDetailPage: ISongDetailPage<ISongDetailPageProps> = () => {
                         </div>
                         <CustomAudioPlayer src={'http://example.com/audio.mp3'}></CustomAudioPlayer>
                     </div>
+                    <div className="relative">
+                        <h3 className="text-uppercase ">có thể bạn quan tâm</h3>
+                    </div>
                 </div>
                 <div className="col-lg-3 right-contents">
                     <div className="head-part d-flex justify-content-between">

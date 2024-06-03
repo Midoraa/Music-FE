@@ -72,7 +72,7 @@ const LoginForm: ILoginComponent<ILoginComponentProps> = () => {
     };
 
     return (
-        <div>
+        <div className="wrap-login100">
             <div className="mb-3">
                 <Validator ref={emailValidatorRef}>
                     <Input
