@@ -5,6 +5,7 @@ import {closestCenter, DndContext} from "@dnd-kit/core";
 import { SortableContext, verticalListSortingStrategy, arrayMove, useSortable } from '@dnd-kit/sortable';
 import {useState} from "react";
 import {CSS} from "@dnd-kit/utilities"
+import Pagination from 'react-bootstrap/Pagination';
 
 const SongDetailPage: ISongDetailPage<ISongDetailPageProps> = () => {
 
@@ -54,13 +55,137 @@ const SongDetailPage: ISongDetailPage<ISongDetailPageProps> = () => {
                         </div>
                         <CustomAudioPlayer src={'http://example.com/audio.mp3'}></CustomAudioPlayer>
                     </div>
-                    <div className="relative">
-                        <h3 className="text-uppercase ">có thể bạn quan tâm</h3>
+                    <div className="relative mt-5">
+                        <h3 className="text-uppercase title-box-key">có thể bạn quan tâm</h3>
+                        <ul className="list-unstyled row row-cols-5">
+                            <li className="col recomment">
+                                <a href="">
+                                    <div className="box-left-album">
+                                        <img src={images.AVATAR_1} alt="Logo" className="w-100 album-image" />
+                                        <div className="play-icon">
+                                            <img src={images.ICON_PLAY} alt="Play Icon"
+                                                 className="w-100 play-icon-image" />
+                                        </div>
+                                    </div>
+                                    <div className="info_album">
+                                        <h3 className="h3seo"><a
+                                            href=""
+                                            className="name_song" title="Nhạc Việt Live">Ballad Việt</a></h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li className="col recomment">
+                                <a href="">
+                                    <div className="box-left-album">
+                                        <img src={images.AVATAR_2} alt="Logo" className="w-100 album-image" />
+                                        <div className="play-icon">
+                                            <img src={images.ICON_PLAY} alt="Play Icon"
+                                                 className="w-100 play-icon-image" />
+                                        </div>
+                                    </div>
+                                    <div className="info_album">
+                                        <h3 className="h3seo"><a
+                                            href=""
+                                            className="name_song" title="Nhạc Việt Live">Acoustic Việt</a></h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li className="col recomment">
+                                <a href="">
+                                    <div className="box-left-album">
+                                        <img src={images.AVATAR_3} alt="Logo" className="w-100 album-image" />
+                                        <div className="play-icon">
+                                            <img src={images.ICON_PLAY} alt="Play Icon"
+                                                 className="w-100 play-icon-image" />
+                                        </div>
+                                    </div>
+                                    <div className="info_album">
+                                        <h3 className="h3seo"><a
+                                            href=""
+                                            className="name_song" title="Nhạc Việt Live">Indie Việt</a></h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li className="col recomment">
+                                <a href="">
+                                    <div className="box-left-album">
+                                        <img src={images.AVATAR_4} alt="Logo" className="w-100 album-image" />
+                                        <div className="play-icon">
+                                            <img src={images.ICON_PLAY} alt="Play Icon"
+                                                 className="w-100 play-icon-image" />
+                                        </div>
+                                    </div>
+                                    <div className="info_album">
+                                        <h3 className="h3seo"><a
+                                            href=""
+                                            className="name_song" title="Nhạc Việt Live">Remix Việt</a></h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li className="col recomment">
+                                <a href="">
+                                    <div className="box-left-album">
+                                        <img src={images.AVATAR_5} alt="Logo" className="w-100 album-image" />
+                                        <div className="play-icon">
+                                            <img src={images.ICON_PLAY} alt="Play Icon"
+                                                 className="w-100 play-icon-image" />
+                                        </div>
+                                    </div>
+                                    <div className="info_album">
+                                        <h3 className="h3seo"><a
+                                            href=""
+                                            className="name_song" title="Nhạc Việt Live">The New VietNam</a></h3>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    {/*---------------------------------BÌNH LUẬN--------------------------------------*/}
+
+                    <div className="mt-5 cmt-container">
+                        <h3 className="text-uppercase title-box-key"><span>2</span> BÌNH LOẠN</h3>
+                        <div className="cmt-contents">
+                            <div className="d-flex cmt-content">
+                                <a href="/user/detail">
+                                    <img src={images.AVATAR_2} alt="" className="avatar-cmt" />
+                                </a>
+                                <div className="user-cmt">
+                                    <p className="user-name">Công Tần Tôn Nữ</p>
+                                    <p className="cmt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                        aspernatur, aut
+                                        error eveniet exercitationem nam nihil odit placeat quaerat quod recusandae
+                                        sapiente sed vitae. Dolorem libero quo quod. Autem, debitis?</p>
+                                </div>
+                            </div>
+                            <div className="d-flex cmt-content">
+                                <a href="/user/detail">
+                                    <img src={images.AVATAR_ACTIST} alt="" className="avatar-cmt" />
+                                </a>
+                                <div className="user-cmt">
+                                    <p className="user-name">Chân Mệnh Thiên Tử</p>
+                                    <p className="cmt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                        aspernatur, aut
+                                        error eveniet exercitationem nam nihil odit placeat quaerat quod recusandae
+                                        sapiente sed vitae. Dolorem libero quo quod. Autem, debitis?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <Pagination>
+                            <Pagination.First />
+                            <Pagination.Prev />
+                            <Pagination.Item>{1}</Pagination.Item>
+                            <Pagination.Next />
+                            <Pagination.Last />
+                        </Pagination>
                     </div>
                 </div>
+
+                {/*--------------------------------------TIẾP THEO---------------------------------------*/}
+
                 <div className="col-lg-3 right-contents">
                     <div className="head-part d-flex justify-content-between">
-                    <h3 className="title-next text-uppercase">Tiếp theo</h3>
+                        <h3 className="title-next text-uppercase">Tiếp theo</h3>
                         <div className="form-check form-switch">
                             <input className="form-check-input" type="checkbox" role="switch"
                                    id="flexSwitchCheckChecked" />
@@ -77,7 +202,8 @@ const SongDetailPage: ISongDetailPage<ISongDetailPageProps> = () => {
                                         <div className="">
                                             <div className={""}>
                                                 <div className="">
-                                                    <SortableContext items={tasks} strategy={verticalListSortingStrategy}>
+                                                    <SortableContext items={tasks}
+                                                                     strategy={verticalListSortingStrategy}>
                                                         {tasks.map((task) => {
                                                                 return (
                                                                     <Task key={task.id} task={task} id={task.id}></Task>
@@ -101,9 +227,9 @@ const SongDetailPage: ISongDetailPage<ISongDetailPageProps> = () => {
     );
 };
 // @ts-ignore
-const Task = ({task, id}) => {
+const Task = ({ task, id }) => {
     //
-    const {attributes, listeners, setNodeRef, transform, transition} = useSortable({id});
+    const { attributes, listeners, setNodeRef, transform, transition } = useSortable({ id });
     // toString(transform: Transform | null): string |
     // undefined
     const style = {

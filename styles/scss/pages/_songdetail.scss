@@ -58,6 +58,107 @@
                 }
             }
         }
+        .title-box-key{
+            color: #00704a;
+        }
+        .recomment{
+            padding-right: 20px;
+            padding-left: 0;
+            .box-left-album{
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+                transition: 0.5s;
+                .album-image {
+                    display: block;
+                    width: 100%;
+                    transition: opacity 0.5s ease;
+                }
+
+                .play-icon {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 50%; // Adjust the size of the play icon
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                    pointer-events: none;
+
+                    .play-icon-image {
+                        width: 100%;
+                    }
+                }
+
+                &:hover {
+                    .album-image {
+                        opacity: 0.5;
+                    }
+
+                    .play-icon {
+                        opacity: 1;
+                    }
+                }
+            }
+            .box-left-album:hover{
+                background: #222222;
+            }
+            .info_album{
+                h3{
+                    margin: 0;
+                }
+                p{
+                    color: grey;
+                    font-size: small;
+                }
+                p:hover{
+                    color: #00704a;
+                }
+            }
+            .name_song{
+                font-size: 15px;
+                transition: 500ms;
+            }
+            .name_song:hover{
+                color: #00704a;
+            }
+        }
+        .cmt-container{
+            .cmt-contents{
+                background: rgba(0, 112, 74, 0.13);
+                padding: 20px;
+                margin-bottom: 20px;
+                .cmt-content{
+                    margin-bottom: 25px;
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+                    .avatar-cmt{
+                        width: 50px;
+                        height: 50px;
+                        object-fit: cover;
+                        border-radius: 100%;
+                        border: 3px solid #00704a;
+                        margin-right: 10px;
+                    }
+                    .user-cmt{
+                        p{
+                            margin-bottom: 5px;
+                        }
+                        .cmt{
+                            font-size: small;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+            .pagination{
+                justify-content: center;
+                .page-link{
+                    color: #00704a;
+                }
+            }
+        }
     }
     .right-contents{
         .title-next{

@@ -32,7 +32,7 @@ const LoginPage: ILoginPage<ILoginPageProps> = () => {
                     </div>
                 </form>
                 <div className="text-center register">
-                    <p>Chưa có tài khoản? <a className="link" href="/register">Đăng ký</a></p>
+                    <p>New to Midora? <a className="link" href="/register"> Register</a></p>
                 </div>
             </div>
         </div>

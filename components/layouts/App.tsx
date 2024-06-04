@@ -53,6 +53,7 @@ const App: IAppComponent<IAppComponentProps> = (props) => {
 
     const nodeHeaderFooterPath = [
         routes.CLIENT.LOGIN.href,
+        routes.CLIENT.REGISTER.href,
     ];
     const noAuthPath = [
         // bắt phân quyền admin

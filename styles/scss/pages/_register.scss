@@ -1,4 +1,4 @@
-.pages__login{
+.pages__register{
     background-image: url("/assets/images/background_2.png");
     width: 100%;
     min-height: 100vh;
@@ -62,6 +62,24 @@
                     padding: 0 5px 0 38px;
                     border: none;
                     outline: none;
+                }
+            }
+            .list-country{
+                width: 200px;
+                position: relative;
+                border-bottom: 2px solid rgba(255, 255, 255, 0.24);
+                margin-bottom: 30px;
+                .select{
+                    width: 100%;
+                    background: 0 0;
+                    color: white;
+                    border: none;
+                    height: 45px;
+                    outline: none;
+                    option{
+                        background: #00704a;
+                        height: 200px;
+                    }
                 }
             }
             .container-login100-form-btn {
