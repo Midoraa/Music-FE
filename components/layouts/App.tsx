@@ -51,10 +51,7 @@ const App: IAppComponent<IAppComponentProps> = (props) => {
         setTimeout(() => window.scrollTo(0, 0), 5);
     };
 
-    const nodeHeaderFooterPath = [
-        routes.CLIENT.LOGIN.href,
-        routes.CLIENT.REGISTER.href,
-    ];
+    const nodeHeaderFooterPath = [routes.CLIENT.LOGIN.href, routes.CLIENT.REGISTER.href];
     const noAuthPath = [
         // bắt phân quyền admin
         routes.CLIENT.NOT_FOUND.href,

@@ -1,14 +1,14 @@
-.playlist-container{
-    .playlist-contents{
-        .left-contents{
-            .list-playlist{
-                .title-box-key{
+.playlist-container {
+    .playlist-contents {
+        .left-contents {
+            .list-playlist {
+                .title-box-key {
                     color: #00704a;
                 }
-                li{
+                li {
                     padding-right: 20px;
                     padding-left: 0;
-                    .box-left-album{
+                    .box-left-album {
                         position: relative;
                         display: inline-block;
                         overflow: hidden;
@@ -44,26 +44,26 @@
                             }
                         }
                     }
-                    .box-left-album:hover{
+                    .box-left-album:hover {
                         background: #222222;
                     }
-                    .info_album{
-                        h3{
+                    .info_album {
+                        h3 {
                             margin: 0;
                         }
-                        p{
+                        p {
                             color: grey;
                             font-size: small;
                         }
-                        p:hover{
+                        p:hover {
                             color: #00704a;
                         }
                     }
-                    .name_song{
+                    .name_song {
                         font-size: 15px;
                         transition: 500ms;
                     }
-                    .name_song:hover{
+                    .name_song:hover {
                         color: #00704a;
                     }
                 }

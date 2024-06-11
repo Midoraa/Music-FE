@@ -1,26 +1,26 @@
-.actist-container{
-    .actist-contents{
-        .title-box-key{
+.actist-container {
+    .actist-contents {
+        .title-box-key {
             color: #00704a;
         }
-        .list-actist{
-            .actist-item{
-                .actist-image{
+        .list-actist {
+            .actist-item {
+                .actist-image {
                     width: 200px;
                     height: 200px;
                     object-fit: cover;
                 }
             }
         }
-        .pagination{
+        .pagination {
             justify-content: center;
-            .page-item{
-                .page-link{
+            .page-item {
+                .page-link {
                     color: #00704a;
                 }
             }
-            .page-item.active{
-                .page-link{
+            .page-item.active {
+                .page-link {
                     color: white;
                     background: #00704a;
                 }

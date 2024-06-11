@@ -6,8 +6,10 @@ const IActistDetailPage: IActistDetailPage<IActistDetailPageProps> = () => {
     return (
         <div className="actist__detail-container">
             <div className="singer-top-cover">
-                <div className="bg-singer-cover"
-                     style={{ backgroundImage: 'url("https://avatar-ex-swe.nixcdn.com/singer/cover/2021/05/12/1/1/1/7/1620802627568.jpg")' }}>
+                <div
+                    className="bg-singer-cover"
+                    style={{ backgroundImage: 'url("https://avatar-ex-swe.nixcdn.com/singer/cover/2021/05/12/1/1/1/7/1620802627568.jpg")' }}
+                >
                     <div className="container">
                         <div className="d-flex main-info justify-content-between">
                             <div className="left-info">
@@ -15,9 +17,7 @@ const IActistDetailPage: IActistDetailPage<IActistDetailPageProps> = () => {
                                 <h3 className="name">Sơn tùng MTP</h3>
                             </div>
                             <div className="right-image">
-                                <img
-                                    src="https://avatar-ex-swe.nixcdn.com/singer/cover/2021/05/12/1/1/1/7/1620802627568.jpg"
-                                    alt="" />
+                                <img src="https://avatar-ex-swe.nixcdn.com/singer/cover/2021/05/12/1/1/1/7/1620802627568.jpg" alt="" />
                             </div>
                         </div>
                     </div>
@@ -32,14 +32,15 @@ const IActistDetailPage: IActistDetailPage<IActistDetailPageProps> = () => {
                                 <div className="box-left-album">
                                     <img src={images.AVATAR_1} alt="Logo" className="w-100 album-image" />
                                     <div className="play-icon">
-                                        <img src={images.ICON_PLAY} alt="Play Icon"
-                                             className="w-100 play-icon-image" />
+                                        <img src={images.ICON_PLAY} alt="Play Icon" className="w-100 play-icon-image" />
                                     </div>
                                 </div>
                                 <div className="info_album">
-                                    <h3 className="h3seo"><a
-                                        href=""
-                                        className="name_song" title="Nhạc Việt Live">Ballad Việt</a></h3>
+                                    <h3 className="h3seo">
+                                        <a href="" className="name_song" title="Nhạc Việt Live">
+                                            Ballad Việt
+                                        </a>
+                                    </h3>
                                 </div>
                             </a>
                         </li>
@@ -48,14 +49,15 @@ const IActistDetailPage: IActistDetailPage<IActistDetailPageProps> = () => {
                                 <div className="box-left-album">
                                     <img src={images.AVATAR_2} alt="Logo" className="w-100 album-image" />
                                     <div className="play-icon">
-                                        <img src={images.ICON_PLAY} alt="Play Icon"
-                                             className="w-100 play-icon-image" />
+                                        <img src={images.ICON_PLAY} alt="Play Icon" className="w-100 play-icon-image" />
                                     </div>
                                 </div>
                                 <div className="info_album">
-                                    <h3 className="h3seo"><a
-                                        href=""
-                                        className="name_song" title="Nhạc Việt Live">Acoustic Việt</a></h3>
+                                    <h3 className="h3seo">
+                                        <a href="" className="name_song" title="Nhạc Việt Live">
+                                            Acoustic Việt
+                                        </a>
+                                    </h3>
                                 </div>
                             </a>
                         </li>
@@ -64,14 +66,15 @@ const IActistDetailPage: IActistDetailPage<IActistDetailPageProps> = () => {
                                 <div className="box-left-album">
                                     <img src={images.AVATAR_3} alt="Logo" className="w-100 album-image" />
                                     <div className="play-icon">
-                                        <img src={images.ICON_PLAY} alt="Play Icon"
-                                             className="w-100 play-icon-image" />
+                                        <img src={images.ICON_PLAY} alt="Play Icon" className="w-100 play-icon-image" />
                                     </div>
                                 </div>
                                 <div className="info_album">
-                                    <h3 className="h3seo"><a
-                                        href=""
-                                        className="name_song" title="Nhạc Việt Live">Indie Việt</a></h3>
+                                    <h3 className="h3seo">
+                                        <a href="" className="name_song" title="Nhạc Việt Live">
+                                            Indie Việt
+                                        </a>
+                                    </h3>
                                 </div>
                             </a>
                         </li>
@@ -80,14 +83,15 @@ const IActistDetailPage: IActistDetailPage<IActistDetailPageProps> = () => {
                                 <div className="box-left-album">
                                     <img src={images.AVATAR_4} alt="Logo" className="w-100 album-image" />
                                     <div className="play-icon">
-                                        <img src={images.ICON_PLAY} alt="Play Icon"
-                                             className="w-100 play-icon-image" />
+                                        <img src={images.ICON_PLAY} alt="Play Icon" className="w-100 play-icon-image" />
                                     </div>
                                 </div>
                                 <div className="info_album">
-                                    <h3 className="h3seo"><a
-                                        href=""
-                                        className="name_song" title="Nhạc Việt Live">Remix Việt</a></h3>
+                                    <h3 className="h3seo">
+                                        <a href="" className="name_song" title="Nhạc Việt Live">
+                                            Remix Việt
+                                        </a>
+                                    </h3>
                                 </div>
                             </a>
                         </li>
@@ -96,14 +100,15 @@ const IActistDetailPage: IActistDetailPage<IActistDetailPageProps> = () => {
                                 <div className="box-left-album">
                                     <img src={images.AVATAR_5} alt="Logo" className="w-100 album-image" />
                                     <div className="play-icon">
-                                        <img src={images.ICON_PLAY} alt="Play Icon"
-                                             className="w-100 play-icon-image" />
+                                        <img src={images.ICON_PLAY} alt="Play Icon" className="w-100 play-icon-image" />
                                     </div>
                                 </div>
                                 <div className="info_album">
-                                    <h3 className="h3seo"><a
-                                        href=""
-                                        className="name_song" title="Nhạc Việt Live">The New VietNam</a></h3>
+                                    <h3 className="h3seo">
+                                        <a href="" className="name_song" title="Nhạc Việt Live">
+                                            The New VietNam
+                                        </a>
+                                    </h3>
                                 </div>
                             </a>
                         </li>
@@ -114,90 +119,114 @@ const IActistDetailPage: IActistDetailPage<IActistDetailPageProps> = () => {
                     <ul className="row row-cols-2 list-unstyled listbaihat">
                         <li className="col baihat">
                             <div className="baihat-chitiet">
-                                <a href="" className='d-flex'>
+                                <a href="" className="d-flex">
                                     <div className="box-left-album2">
                                         <img src={images.AVATAR_1} alt="Logo" className="w-100 album-image" />
                                     </div>
                                     <div className="info_album">
-                                        <h3 className="h3seo"><a
-                                            href=""
-                                            className="name_song" title="Nhạc Việt Live">Tên bài hát</a></h3>
-                                        <p><a href="">Tên ca sĩ</a></p>
+                                        <h3 className="h3seo">
+                                            <a href="" className="name_song" title="Nhạc Việt Live">
+                                                Tên bài hát
+                                            </a>
+                                        </h3>
+                                        <p>
+                                            <a href="">Tên ca sĩ</a>
+                                        </p>
                                     </div>
                                 </a>
                             </div>
                         </li>
                         <li className="col baihat">
                             <div className="baihat-chitiet">
-                                <a href="" className='d-flex'>
+                                <a href="" className="d-flex">
                                     <div className="box-left-album2">
                                         <img src={images.AVATAR_1} alt="Logo" className="w-100 album-image" />
                                     </div>
                                     <div className="info_album">
-                                        <h3 className="h3seo"><a
-                                            href=""
-                                            className="name_song" title="Nhạc Việt Live">Tên bài hát</a></h3>
-                                        <p><a href="">Tên ca sĩ</a></p>
+                                        <h3 className="h3seo">
+                                            <a href="" className="name_song" title="Nhạc Việt Live">
+                                                Tên bài hát
+                                            </a>
+                                        </h3>
+                                        <p>
+                                            <a href="">Tên ca sĩ</a>
+                                        </p>
                                     </div>
                                 </a>
                             </div>
                         </li>
                         <li className="col baihat">
                             <div className="baihat-chitiet">
-                                <a href="" className='d-flex'>
+                                <a href="" className="d-flex">
                                     <div className="box-left-album2">
                                         <img src={images.AVATAR_1} alt="Logo" className="w-100 album-image" />
                                     </div>
                                     <div className="info_album">
-                                        <h3 className="h3seo"><a
-                                            href=""
-                                            className="name_song" title="Nhạc Việt Live">Tên bài hát</a></h3>
-                                        <p><a href="">Tên ca sĩ</a></p>
+                                        <h3 className="h3seo">
+                                            <a href="" className="name_song" title="Nhạc Việt Live">
+                                                Tên bài hát
+                                            </a>
+                                        </h3>
+                                        <p>
+                                            <a href="">Tên ca sĩ</a>
+                                        </p>
                                     </div>
                                 </a>
                             </div>
                         </li>
                         <li className="col baihat">
                             <div className="baihat-chitiet">
-                                <a href="" className='d-flex'>
+                                <a href="" className="d-flex">
                                     <div className="box-left-album2">
                                         <img src={images.AVATAR_1} alt="Logo" className="w-100 album-image" />
                                     </div>
                                     <div className="info_album">
-                                        <h3 className="h3seo"><a
-                                            href=""
-                                            className="name_song" title="Nhạc Việt Live">Tên bài hát</a></h3>
-                                        <p><a href="">Tên ca sĩ</a></p>
+                                        <h3 className="h3seo">
+                                            <a href="" className="name_song" title="Nhạc Việt Live">
+                                                Tên bài hát
+                                            </a>
+                                        </h3>
+                                        <p>
+                                            <a href="">Tên ca sĩ</a>
+                                        </p>
                                     </div>
                                 </a>
                             </div>
                         </li>
                         <li className="col baihat">
                             <div className="baihat-chitiet">
-                                <a href="" className='d-flex'>
+                                <a href="" className="d-flex">
                                     <div className="box-left-album2">
                                         <img src={images.AVATAR_1} alt="Logo" className="w-100 album-image" />
                                     </div>
                                     <div className="info_album">
-                                        <h3 className="h3seo"><a
-                                            href=""
-                                            className="name_song" title="Nhạc Việt Live">Tên bài hát</a></h3>
-                                        <p><a href="">Tên ca sĩ</a></p>
+                                        <h3 className="h3seo">
+                                            <a href="" className="name_song" title="Nhạc Việt Live">
+                                                Tên bài hát
+                                            </a>
+                                        </h3>
+                                        <p>
+                                            <a href="">Tên ca sĩ</a>
+                                        </p>
                                     </div>
                                 </a>
                             </div>
                         </li>
                         <li className="col baihat">
                             <div className="baihat-chitiet">
-                                <a href="" className='d-flex'>
+                                <a href="" className="d-flex">
                                     <div className="box-left-album2">
                                         <img src={images.AVATAR_1} alt="Logo" className="w-100 album-image" />
                                     </div>
                                     <div className="info_album">
-                                        <h3 className="h3seo"><a
-                                            href=""
-                                            className="name_song" title="Nhạc Việt Live">Tên bài hát</a></h3>
-                                        <p><a href="">Tên ca sĩ</a></p>
+                                        <h3 className="h3seo">
+                                            <a href="" className="name_song" title="Nhạc Việt Live">
+                                                Tên bài hát
+                                            </a>
+                                        </h3>
+                                        <p>
+                                            <a href="">Tên ca sĩ</a>
+                                        </p>
                                     </div>
                                 </a>
                             </div>

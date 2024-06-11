@@ -19,8 +19,7 @@ const LoginPage: ILoginPage<ILoginPageProps> = () => {
                     </div>
                     <div className="login100-form-title py-3">Log in</div>
                     <div className="wrap-input100 validate-input" data-validate="Enter username">
-                        <input className="input100" type="text" name="username" placeholder="Username"
-                               autoComplete="off" />
+                        <input className="input100" type="text" name="username" placeholder="Username" autoComplete="off" />
                         <span className="focus-input100" data-placeholder=""></span>
                     </div>
                     <div className="wrap-input100 validate-input" data-validate="Enter username">
@@ -32,7 +31,13 @@ const LoginPage: ILoginPage<ILoginPageProps> = () => {
                     </div>
                 </form>
                 <div className="text-center register">
-                    <p>New to Midora? <a className="link" href="/register"> Register</a></p>
+                    <p>
+                        New to Midora?{' '}
+                        <a className="link" href="/register">
+                            {' '}
+                            Register
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>

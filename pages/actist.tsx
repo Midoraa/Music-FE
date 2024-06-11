@@ -3,7 +3,7 @@ import { images } from '@utils/constants';
 import Pagination from 'react-bootstrap/Pagination';
 
 const Actist: IActistPage<IActistPageProps> = () => {
-    return(
+    return (
         <div className="actist-container">
             <div className="container actist-contents mt-3">
                 <h3 className="title-box-key text-uppercase mb-2">Nghệ sĩ</h3>
@@ -68,7 +68,7 @@ const Actist: IActistPage<IActistPageProps> = () => {
                 </Pagination>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Actist
+export default Actist;

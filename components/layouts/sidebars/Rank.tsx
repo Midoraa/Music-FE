@@ -5,12 +5,10 @@ import Tabs from 'react-bootstrap/Tabs';
 const Rank: IRankComponent<IRankComponentProps> = () => {
     return (
         <div className="rank">
-            <h3 className="title-box text-uppercase"><a href="/">BXH Bài Hát</a></h3>
-            <Tabs
-                defaultActiveKey="vn"
-                id="uncontrolled-tab-example"
-                className="mb-3"
-            >
+            <h3 className="title-box text-uppercase">
+                <a href="/">BXH Bài Hát</a>
+            </h3>
+            <Tabs defaultActiveKey="vn" id="uncontrolled-tab-example" className="mb-3">
                 <Tab eventKey="vn" title="Việt Nam">
                     <ul className="list-song list-unstyled">
                         <li className="list_chart_music">
@@ -160,7 +158,7 @@ const Rank: IRankComponent<IRankComponentProps> = () => {
                 </Tab>
             </Tabs>
         </div>
-    )
-}
+    );
+};
 
 export default Rank;

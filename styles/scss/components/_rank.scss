@@ -1,24 +1,24 @@
-.rank{
-    .title-box{
+.rank {
+    .title-box {
         text-align: center;
-        a{
+        a {
             color: #00704a;
         }
     }
-    .nav-link{
+    .nav-link {
         color: #00704a;
     }
-    .nav-link.active{
+    .nav-link.active {
         color: white;
         background: #00704a;
     }
-    .list-song{
-        .list_chart_music{
+    .list-song {
+        .list_chart_music {
             float: left;
             margin-bottom: 20px;
             width: 100%;
-            .info_data{
-                .number{
+            .info_data {
+                .number {
                     font-size: 20px;
                     width: 40px;
                     height: 40px;
@@ -26,19 +26,18 @@
                     text-align: center;
                     align-self: center;
                 }
-                .info{
-                    h5{
+                .info {
+                    h5 {
                         margin: 0;
                         font-size: 14px;
                     }
-                    p{
+                    p {
                         margin: 0;
                         font-size: small;
                         color: gray;
                     }
                 }
             }
-
         }
     }
 }

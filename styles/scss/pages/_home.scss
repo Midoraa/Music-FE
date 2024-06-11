@@ -17,26 +17,25 @@
             object-fit: cover;
         }
 
-        .right-sidebar{
-
+        .right-sidebar {
         }
 
-        .left-contents{
+        .left-contents {
             padding: 0;
-            .title-box-key{
+            .title-box-key {
                 color: #00704a;
                 font-size: 1.75rem;
             }
-            .contents{
-                .nhacviet{
+            .contents {
+                .nhacviet {
                     margin-bottom: 5px;
-                    ul{
+                    ul {
                         margin-top: 10px;
                     }
-                    li{
+                    li {
                         padding-right: 20px;
                         padding-left: 0;
-                        .box-left-album{
+                        .box-left-album {
                             position: relative;
                             display: inline-block;
                             overflow: hidden;
@@ -72,38 +71,38 @@
                                 }
                             }
                         }
-                        .box-left-album:hover{
+                        .box-left-album:hover {
                             background: #222222;
                         }
-                        .info_album{
-                            h3{
+                        .info_album {
+                            h3 {
                                 margin: 0;
                             }
-                            p{
+                            p {
                                 color: grey;
                                 font-size: small;
                             }
-                            p:hover{
+                            p:hover {
                                 color: #00704a;
                             }
                         }
-                        .name_song{
+                        .name_song {
                             font-size: 15px;
                             transition: 500ms;
                         }
-                        .name_song:hover{
+                        .name_song:hover {
                             color: #00704a;
                         }
                     }
-                    .listbaihat{
-                        .baihat{
+                    .listbaihat {
+                        .baihat {
                             padding-right: 40px;
-                            .baihat-chitiet{
+                            .baihat-chitiet {
                                 padding-top: 10px;
                                 border-top: 1px solid #c9c9c9;
-                                .box-left-album2{
+                                .box-left-album2 {
                                     margin-right: 10px;
-                                    img{
+                                    img {
                                         width: 60px;
                                         height: 60px;
                                         object-fit: cover;
