@@ -1,7 +1,7 @@
-.topic-container {
-    .title-box {
+.topic-container{
+    .title-box{
         text-align: center;
-        a {
+        a{
             color: #00704a;
         }
     }
@@ -10,7 +10,7 @@
         height: 100%;
         border-radius: 8px;
         overflow: hidden;
-        box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.09);
+        box-shadow: 0 2px 24px 0 rgba(0, 0, 0, .09);
         cursor: pointer;
         .cover {
             position: relative;
@@ -28,7 +28,7 @@
                 margin-bottom: 0;
             }
             img {
-                transition: transform 0.7s;
+                transition: transform .7s;
             }
         }
         .zm-card-image:hover {

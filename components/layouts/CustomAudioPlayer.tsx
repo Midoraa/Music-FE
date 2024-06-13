@@ -12,7 +12,7 @@ const CustomAudioPlayer: React.FC<CustomAudioPlayerProps> = ({ src }) => {
         <AudioPlayer
             autoPlay={true}
             src={src}
-            onPlay={() => console.log('onPlay')}
+            onPlay={() => console.log("onPlay")}
             // other props here
         />
     );

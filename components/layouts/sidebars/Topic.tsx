@@ -1,12 +1,11 @@
 import { ITopicComponent, ITopicComponentProps } from '@interfaces/components/topic';
 import { images } from '@utils/constants';
 
+
 const Topic: ITopicComponent<ITopicComponentProps> = () => {
-    return (
+    return(
         <div className="topic-container">
-            <h3 className="title-box text-uppercase">
-                <a href="/">Chủ Đề</a>
-            </h3>
+            <h3 className="title-box text-uppercase"><a href="/">Chủ Đề</a></h3>
             <div className="zm-featured-item mb-3">
                 <a href="">
                     <div className="zm-card-image cover">
@@ -15,9 +14,7 @@ const Topic: ITopicComponent<ITopicComponentProps> = () => {
                         </figure>
                     </div>
                     <div className="body">
-                        <div className="content mar-t-10">
-                            <h3 className="title">BXH nhạc mới</h3>
-                        </div>
+                        <div className="content mar-t-10"><h3 className="title">BXH nhạc mới</h3></div>
                     </div>
                 </a>
             </div>
@@ -29,9 +26,7 @@ const Topic: ITopicComponent<ITopicComponentProps> = () => {
                         </figure>
                     </div>
                     <div className="body">
-                        <div className="content mar-t-10">
-                            <h3 className="title">Top 100</h3>
-                        </div>
+                        <div className="content mar-t-10"><h3 className="title">Top 100</h3></div>
                     </div>
                 </a>
             </div>
@@ -43,9 +38,7 @@ const Topic: ITopicComponent<ITopicComponentProps> = () => {
                         </figure>
                     </div>
                     <div className="body">
-                        <div className="content mar-t-10">
-                            <h3 className="title">Nhạc trẻ</h3>
-                        </div>
+                        <div className="content mar-t-10"><h3 className="title">Nhạc trẻ</h3></div>
                     </div>
                 </a>
             </div>
@@ -57,14 +50,12 @@ const Topic: ITopicComponent<ITopicComponentProps> = () => {
                         </figure>
                     </div>
                     <div className="body">
-                        <div className="content mar-t-10">
-                            <h3 className="title">Những chuyến đi</h3>
-                        </div>
+                        <div className="content mar-t-10"><h3 className="title">Những chuyến đi</h3></div>
                     </div>
                 </a>
             </div>
         </div>
-    );
-};
+    )
+}
 
 export default Topic;

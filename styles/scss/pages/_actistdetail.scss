@@ -1,17 +1,17 @@
-.actist__detail-container {
-    .singer-top-cover {
+.actist__detail-container{
+    .singer-top-cover{
         width: 100%;
         height: 287px;
         background: #555555;
         overflow: hidden;
     }
-    .bg-singer-cover {
+    .bg-singer-cover{
         position: relative;
         overflow: hidden;
         background-size: cover;
         background-position: center;
         &::before {
-            content: '';
+            content: "";
             position: absolute;
             top: 0;
             left: 0;
@@ -26,17 +26,17 @@
         .container {
             position: relative;
             z-index: 1;
-            .main-info {
-                .left-info {
+            .main-info{
+                .left-info{
                     align-self: center;
                     text-align: center;
-                    .avatar {
+                    .avatar{
                         width: 120px;
                         height: 120px;
                         object-fit: cover;
                         border-radius: 100%;
                     }
-                    .name {
+                    .name{
                         font-size: 25px;
                         color: white;
                         font-weight: 300;
@@ -48,15 +48,16 @@
                 }
             }
         }
+
     }
-    .actist-details__contents {
-        .title-box-key {
+    .actist-details__contents{
+        .title-box-key{
             color: #00704a;
         }
-        li {
+        li{
             padding-right: 20px;
             padding-left: 0;
-            .box-left-album {
+            .box-left-album{
                 position: relative;
                 display: inline-block;
                 overflow: hidden;
@@ -92,38 +93,38 @@
                     }
                 }
             }
-            .box-left-album:hover {
+            .box-left-album:hover{
                 background: #222222;
             }
-            .info_album {
-                h3 {
+            .info_album{
+                h3{
                     margin: 0;
                 }
-                p {
+                p{
                     color: grey;
                     font-size: small;
                 }
-                p:hover {
+                p:hover{
                     color: #00704a;
                 }
             }
-            .name_song {
+            .name_song{
                 font-size: 15px;
                 transition: 500ms;
             }
-            .name_song:hover {
+            .name_song:hover{
                 color: #00704a;
             }
         }
-        .listbaihat {
-            .baihat {
+        .listbaihat{
+            .baihat{
                 padding-right: 40px;
-                .baihat-chitiet {
+                .baihat-chitiet{
                     padding-top: 10px;
                     border-top: 1px solid #c9c9c9;
-                    .box-left-album2 {
+                    .box-left-album2{
                         margin-right: 10px;
-                        img {
+                        img{
                             width: 60px;
                             height: 60px;
                             object-fit: cover;
@@ -132,15 +133,15 @@
                 }
             }
         }
-        .pagination {
+        .pagination{
             justify-content: center;
-            .page-item {
-                .page-link {
+            .page-item{
+                .page-link{
                     color: #00704a;
                 }
             }
-            .page-item.active {
-                .page-link {
+            .page-item.active{
+                .page-link{
                     color: white;
                     background: #00704a;
                 }

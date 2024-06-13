@@ -16,15 +16,14 @@ const PlayList: IPlayListPage<IPlayListPageProps> = () => {
                                         <div className="box-left-album">
                                             <img src={images.AVATAR_1} alt="Logo" className="w-100 album-image" />
                                             <div className="play-icon">
-                                                <img src={images.ICON_PLAY} alt="Play Icon" className="w-100 play-icon-image" />
+                                                <img src={images.ICON_PLAY} alt="Play Icon"
+                                                     className="w-100 play-icon-image" />
                                             </div>
                                         </div>
                                         <div className="info_album">
-                                            <h3 className="h3seo">
-                                                <a href="" className="name_song" title="Nhạc Việt Live">
-                                                    Ballad Việt
-                                                </a>
-                                            </h3>
+                                            <h3 className="h3seo"><a
+                                                href=""
+                                                className="name_song" title="Nhạc Việt Live">Ballad Việt</a></h3>
                                         </div>
                                     </a>
                                 </li>
@@ -33,15 +32,14 @@ const PlayList: IPlayListPage<IPlayListPageProps> = () => {
                                         <div className="box-left-album">
                                             <img src={images.AVATAR_2} alt="Logo" className="w-100 album-image" />
                                             <div className="play-icon">
-                                                <img src={images.ICON_PLAY} alt="Play Icon" className="w-100 play-icon-image" />
+                                                <img src={images.ICON_PLAY} alt="Play Icon"
+                                                     className="w-100 play-icon-image" />
                                             </div>
                                         </div>
                                         <div className="info_album">
-                                            <h3 className="h3seo">
-                                                <a href="" className="name_song" title="Nhạc Việt Live">
-                                                    Acoustic Việt
-                                                </a>
-                                            </h3>
+                                            <h3 className="h3seo"><a
+                                                href=""
+                                                className="name_song" title="Nhạc Việt Live">Acoustic Việt</a></h3>
                                         </div>
                                     </a>
                                 </li>
@@ -50,15 +48,14 @@ const PlayList: IPlayListPage<IPlayListPageProps> = () => {
                                         <div className="box-left-album">
                                             <img src={images.AVATAR_3} alt="Logo" className="w-100 album-image" />
                                             <div className="play-icon">
-                                                <img src={images.ICON_PLAY} alt="Play Icon" className="w-100 play-icon-image" />
+                                                <img src={images.ICON_PLAY} alt="Play Icon"
+                                                     className="w-100 play-icon-image" />
                                             </div>
                                         </div>
                                         <div className="info_album">
-                                            <h3 className="h3seo">
-                                                <a href="" className="name_song" title="Nhạc Việt Live">
-                                                    Indie Việt
-                                                </a>
-                                            </h3>
+                                            <h3 className="h3seo"><a
+                                                href=""
+                                                className="name_song" title="Nhạc Việt Live">Indie Việt</a></h3>
                                         </div>
                                     </a>
                                 </li>
@@ -67,15 +64,14 @@ const PlayList: IPlayListPage<IPlayListPageProps> = () => {
                                         <div className="box-left-album">
                                             <img src={images.AVATAR_4} alt="Logo" className="w-100 album-image" />
                                             <div className="play-icon">
-                                                <img src={images.ICON_PLAY} alt="Play Icon" className="w-100 play-icon-image" />
+                                                <img src={images.ICON_PLAY} alt="Play Icon"
+                                                     className="w-100 play-icon-image" />
                                             </div>
                                         </div>
                                         <div className="info_album">
-                                            <h3 className="h3seo">
-                                                <a href="" className="name_song" title="Nhạc Việt Live">
-                                                    Remix Việt
-                                                </a>
-                                            </h3>
+                                            <h3 className="h3seo"><a
+                                                href=""
+                                                className="name_song" title="Nhạc Việt Live">Remix Việt</a></h3>
                                         </div>
                                     </a>
                                 </li>
@@ -84,15 +80,14 @@ const PlayList: IPlayListPage<IPlayListPageProps> = () => {
                                         <div className="box-left-album">
                                             <img src={images.AVATAR_5} alt="Logo" className="w-100 album-image" />
                                             <div className="play-icon">
-                                                <img src={images.ICON_PLAY} alt="Play Icon" className="w-100 play-icon-image" />
+                                                <img src={images.ICON_PLAY} alt="Play Icon"
+                                                     className="w-100 play-icon-image" />
                                             </div>
                                         </div>
                                         <div className="info_album">
-                                            <h3 className="h3seo">
-                                                <a href="" className="name_song" title="Nhạc Việt Live">
-                                                    The New VietNam
-                                                </a>
-                                            </h3>
+                                            <h3 className="h3seo"><a
+                                                href=""
+                                                className="name_song" title="Nhạc Việt Live">The New VietNam</a></h3>
                                         </div>
                                     </a>
                                 </li>
@@ -106,15 +101,14 @@ const PlayList: IPlayListPage<IPlayListPageProps> = () => {
                                         <div className="box-left-album">
                                             <img src={images.AVATAR_1} alt="Logo" className="w-100 album-image" />
                                             <div className="play-icon">
-                                                <img src={images.ICON_PLAY} alt="Play Icon" className="w-100 play-icon-image" />
+                                                <img src={images.ICON_PLAY} alt="Play Icon"
+                                                     className="w-100 play-icon-image" />
                                             </div>
                                         </div>
                                         <div className="info_album">
-                                            <h3 className="h3seo">
-                                                <a href="" className="name_song" title="Nhạc Việt Live">
-                                                    Ballad Việt
-                                                </a>
-                                            </h3>
+                                            <h3 className="h3seo"><a
+                                                href=""
+                                                className="name_song" title="Nhạc Việt Live">Ballad Việt</a></h3>
                                         </div>
                                     </a>
                                 </li>
@@ -123,15 +117,14 @@ const PlayList: IPlayListPage<IPlayListPageProps> = () => {
                                         <div className="box-left-album">
                                             <img src={images.AVATAR_2} alt="Logo" className="w-100 album-image" />
                                             <div className="play-icon">
-                                                <img src={images.ICON_PLAY} alt="Play Icon" className="w-100 play-icon-image" />
+                                                <img src={images.ICON_PLAY} alt="Play Icon"
+                                                     className="w-100 play-icon-image" />
                                             </div>
                                         </div>
                                         <div className="info_album">
-                                            <h3 className="h3seo">
-                                                <a href="" className="name_song" title="Nhạc Việt Live">
-                                                    Acoustic Việt
-                                                </a>
-                                            </h3>
+                                            <h3 className="h3seo"><a
+                                                href=""
+                                                className="name_song" title="Nhạc Việt Live">Acoustic Việt</a></h3>
                                         </div>
                                     </a>
                                 </li>
@@ -140,15 +133,14 @@ const PlayList: IPlayListPage<IPlayListPageProps> = () => {
                                         <div className="box-left-album">
                                             <img src={images.AVATAR_3} alt="Logo" className="w-100 album-image" />
                                             <div className="play-icon">
-                                                <img src={images.ICON_PLAY} alt="Play Icon" className="w-100 play-icon-image" />
+                                                <img src={images.ICON_PLAY} alt="Play Icon"
+                                                     className="w-100 play-icon-image" />
                                             </div>
                                         </div>
                                         <div className="info_album">
-                                            <h3 className="h3seo">
-                                                <a href="" className="name_song" title="Nhạc Việt Live">
-                                                    Indie Việt
-                                                </a>
-                                            </h3>
+                                            <h3 className="h3seo"><a
+                                                href=""
+                                                className="name_song" title="Nhạc Việt Live">Indie Việt</a></h3>
                                         </div>
                                     </a>
                                 </li>
@@ -157,15 +149,14 @@ const PlayList: IPlayListPage<IPlayListPageProps> = () => {
                                         <div className="box-left-album">
                                             <img src={images.AVATAR_4} alt="Logo" className="w-100 album-image" />
                                             <div className="play-icon">
-                                                <img src={images.ICON_PLAY} alt="Play Icon" className="w-100 play-icon-image" />
+                                                <img src={images.ICON_PLAY} alt="Play Icon"
+                                                     className="w-100 play-icon-image" />
                                             </div>
                                         </div>
                                         <div className="info_album">
-                                            <h3 className="h3seo">
-                                                <a href="" className="name_song" title="Nhạc Việt Live">
-                                                    Remix Việt
-                                                </a>
-                                            </h3>
+                                            <h3 className="h3seo"><a
+                                                href=""
+                                                className="name_song" title="Nhạc Việt Live">Remix Việt</a></h3>
                                         </div>
                                     </a>
                                 </li>
@@ -174,15 +165,14 @@ const PlayList: IPlayListPage<IPlayListPageProps> = () => {
                                         <div className="box-left-album">
                                             <img src={images.AVATAR_5} alt="Logo" className="w-100 album-image" />
                                             <div className="play-icon">
-                                                <img src={images.ICON_PLAY} alt="Play Icon" className="w-100 play-icon-image" />
+                                                <img src={images.ICON_PLAY} alt="Play Icon"
+                                                     className="w-100 play-icon-image" />
                                             </div>
                                         </div>
                                         <div className="info_album">
-                                            <h3 className="h3seo">
-                                                <a href="" className="name_song" title="Nhạc Việt Live">
-                                                    The New VietNam
-                                                </a>
-                                            </h3>
+                                            <h3 className="h3seo"><a
+                                                href=""
+                                                className="name_song" title="Nhạc Việt Live">The New VietNam</a></h3>
                                         </div>
                                     </a>
                                 </li>
@@ -193,15 +183,14 @@ const PlayList: IPlayListPage<IPlayListPageProps> = () => {
                                         <div className="box-left-album">
                                             <img src={images.AVATAR_1} alt="Logo" className="w-100 album-image" />
                                             <div className="play-icon">
-                                                <img src={images.ICON_PLAY} alt="Play Icon" className="w-100 play-icon-image" />
+                                                <img src={images.ICON_PLAY} alt="Play Icon"
+                                                     className="w-100 play-icon-image" />
                                             </div>
                                         </div>
                                         <div className="info_album">
-                                            <h3 className="h3seo">
-                                                <a href="" className="name_song" title="Nhạc Việt Live">
-                                                    Ballad Việt
-                                                </a>
-                                            </h3>
+                                            <h3 className="h3seo"><a
+                                                href=""
+                                                className="name_song" title="Nhạc Việt Live">Ballad Việt</a></h3>
                                         </div>
                                     </a>
                                 </li>
@@ -210,15 +199,14 @@ const PlayList: IPlayListPage<IPlayListPageProps> = () => {
                                         <div className="box-left-album">
                                             <img src={images.AVATAR_2} alt="Logo" className="w-100 album-image" />
                                             <div className="play-icon">
-                                                <img src={images.ICON_PLAY} alt="Play Icon" className="w-100 play-icon-image" />
+                                                <img src={images.ICON_PLAY} alt="Play Icon"
+                                                     className="w-100 play-icon-image" />
                                             </div>
                                         </div>
                                         <div className="info_album">
-                                            <h3 className="h3seo">
-                                                <a href="" className="name_song" title="Nhạc Việt Live">
-                                                    Acoustic Việt
-                                                </a>
-                                            </h3>
+                                            <h3 className="h3seo"><a
+                                                href=""
+                                                className="name_song" title="Nhạc Việt Live">Acoustic Việt</a></h3>
                                         </div>
                                     </a>
                                 </li>
@@ -227,15 +215,14 @@ const PlayList: IPlayListPage<IPlayListPageProps> = () => {
                                         <div className="box-left-album">
                                             <img src={images.AVATAR_3} alt="Logo" className="w-100 album-image" />
                                             <div className="play-icon">
-                                                <img src={images.ICON_PLAY} alt="Play Icon" className="w-100 play-icon-image" />
+                                                <img src={images.ICON_PLAY} alt="Play Icon"
+                                                     className="w-100 play-icon-image" />
                                             </div>
                                         </div>
                                         <div className="info_album">
-                                            <h3 className="h3seo">
-                                                <a href="" className="name_song" title="Nhạc Việt Live">
-                                                    Indie Việt
-                                                </a>
-                                            </h3>
+                                            <h3 className="h3seo"><a
+                                                href=""
+                                                className="name_song" title="Nhạc Việt Live">Indie Việt</a></h3>
                                         </div>
                                     </a>
                                 </li>
@@ -244,15 +231,14 @@ const PlayList: IPlayListPage<IPlayListPageProps> = () => {
                                         <div className="box-left-album">
                                             <img src={images.AVATAR_4} alt="Logo" className="w-100 album-image" />
                                             <div className="play-icon">
-                                                <img src={images.ICON_PLAY} alt="Play Icon" className="w-100 play-icon-image" />
+                                                <img src={images.ICON_PLAY} alt="Play Icon"
+                                                     className="w-100 play-icon-image" />
                                             </div>
                                         </div>
                                         <div className="info_album">
-                                            <h3 className="h3seo">
-                                                <a href="" className="name_song" title="Nhạc Việt Live">
-                                                    Remix Việt
-                                                </a>
-                                            </h3>
+                                            <h3 className="h3seo"><a
+                                                href=""
+                                                className="name_song" title="Nhạc Việt Live">Remix Việt</a></h3>
                                         </div>
                                     </a>
                                 </li>
@@ -261,15 +247,14 @@ const PlayList: IPlayListPage<IPlayListPageProps> = () => {
                                         <div className="box-left-album">
                                             <img src={images.AVATAR_5} alt="Logo" className="w-100 album-image" />
                                             <div className="play-icon">
-                                                <img src={images.ICON_PLAY} alt="Play Icon" className="w-100 play-icon-image" />
+                                                <img src={images.ICON_PLAY} alt="Play Icon"
+                                                     className="w-100 play-icon-image" />
                                             </div>
                                         </div>
                                         <div className="info_album">
-                                            <h3 className="h3seo">
-                                                <a href="" className="name_song" title="Nhạc Việt Live">
-                                                    The New VietNam
-                                                </a>
-                                            </h3>
+                                            <h3 className="h3seo"><a
+                                                href=""
+                                                className="name_song" title="Nhạc Việt Live">The New VietNam</a></h3>
                                         </div>
                                     </a>
                                 </li>
@@ -282,7 +267,7 @@ const PlayList: IPlayListPage<IPlayListPageProps> = () => {
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default PlayList;
+export default PlayList

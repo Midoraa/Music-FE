@@ -1,5 +1,5 @@
-.pages__register {
-    background-image: url('/assets/images/background_2.png');
+.pages__register{
+    background-image: url("/assets/images/background_2.png");
     width: 100%;
     min-height: 100vh;
     display: -webkit-box;
@@ -16,29 +16,29 @@
     background-size: cover;
     position: relative;
     z-index: 1;
-    .wrap-login100 {
+    .wrap-login100{
         width: 500px;
         border-radius: 10px;
         overflow: hidden;
         padding: 55px 55px 37px;
         background: #9152f8;
-        background: linear-gradient(to bottom right, #77a1d3, #79cbca, #e684ae);
-        .back {
+        background: linear-gradient(to bottom right, #77A1D3, #79CBCA, #E684AE);
+        .back{
             top: 2rem;
             left: 2rem;
-            img {
+            img{
                 width: 15px;
             }
         }
         .login100-form {
             width: 100%;
-            .logo {
+            .logo{
                 padding: 20px;
                 background: white;
                 border-radius: 100%;
                 width: 100px;
             }
-            .login100-form-title {
+            .login100-form-title{
                 color: white;
                 font-size: 30px;
                 text-align: center;
@@ -49,7 +49,7 @@
             .wrap-input100 {
                 width: 100%;
                 position: relative;
-                border-bottom: 2px solid rgba(255, 255, 255, 0.24);
+                border-bottom: 2px solid rgba(255, 255, 255, .24);
                 margin-bottom: 30px;
                 .input100 {
                     font-size: 16px;
@@ -64,19 +64,19 @@
                     outline: none;
                 }
             }
-            .list-country {
+            .list-country{
                 width: 200px;
                 position: relative;
                 border-bottom: 2px solid rgba(255, 255, 255, 0.24);
                 margin-bottom: 30px;
-                .select {
+                .select{
                     width: 100%;
                     background: 0 0;
                     color: white;
                     border: none;
                     height: 45px;
                     outline: none;
-                    option {
+                    option{
                         background: #00704a;
                         height: 200px;
                     }
@@ -115,7 +115,7 @@
                     }
                 }
                 button:before {
-                    content: '';
+                    content: "";
                     position: absolute;
                     top: -5px;
                     left: -5px;
@@ -135,15 +135,15 @@
                 }
             }
         }
-        .register {
-            p {
+        .register{
+            p{
                 font-size: 14px;
-                font-family: 'Roboto', sans-serif;
+                font-family: "Roboto", sans-serif;
             }
-            .link {
-                text-decoration: underline !important;
+            .link{
+                text-decoration: underline!important;
                 transition: 500ms;
-                &:hover {
+                &:hover{
                     color: white;
                 }
             }
