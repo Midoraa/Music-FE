@@ -1,12 +1,14 @@
-import { IRegisterPageProps, IRegisterPage } from '@interfaces/pages/register';
+import { IRegisterPageProps,  IRegisterPage} from '@interfaces/pages/register';
 import { images } from '@utils/constants';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
-interface Country {
-    countryName: string;
+
+interface Country{
+    countryName: string
 }
 const RegisterPage: IRegisterPage<IRegisterPageProps> = () => {
+
     const [countries, setCountries] = useState<Country[]>([]);
     const [selectedCountry, setSelectedCountry] = useState<string>('');
 
@@ -42,7 +44,8 @@ const RegisterPage: IRegisterPage<IRegisterPageProps> = () => {
 
                     <div className="d-flex">
                         <div className="wrap-input100 validate-input" data-validate="Enter Name">
-                            <input className="input100" type="text" name="name" placeholder="Name" autoComplete="off" />
+                            <input className="input100" type="text" name="name" placeholder="Name"
+                                   autoComplete="off" />
                             <span className="focus-input100" data-placeholder=""></span>
                         </div>
                         <div className="list-country" data-validate="Enter country">
@@ -54,16 +57,15 @@ const RegisterPage: IRegisterPage<IRegisterPageProps> = () => {
                             >
                                 <option value="">Country</option>
                                 {countries.map((country, index) => (
-                                    <option key={index} value={country}>
-                                        {country}
-                                    </option>
+                                    <option key={index} value={country.toString()}>{country}</option>
                                 ))}
                             </select>
                         </div>
                     </div>
 
                     <div className="wrap-input100 validate-input" data-validate="Enter username">
-                        <input className="input100" type="text" name="username" placeholder="Username" autoComplete="off" />
+                        <input className="input100" type="text" name="username" placeholder="Username"
+                               autoComplete="off" />
                         <span className="focus-input100" data-placeholder=""></span>
                     </div>
                     <div className="wrap-input100 validate-input" data-validate="Enter username">
@@ -76,11 +78,7 @@ const RegisterPage: IRegisterPage<IRegisterPageProps> = () => {
                     </div>
                 </form>
                 <div className="text-center register">
-                    <p>
-                        <a className="link" href="/login">
-                            Login
-                        </a>
-                    </p>
+                    <p><a className="link" href="/login">Login</a></p>
                 </div>
             </div>
         </div>

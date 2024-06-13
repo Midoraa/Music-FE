@@ -29,9 +29,9 @@ const UserDetailPage: IUserDetailPage<IUserDetailPageProps> = () => {
                     </div>
                 </div>
             </div>
-            <div className="container mt-3 actist-details__contents">
+            <div className="container mt-5 actist-details__contents">
                 <div className="album">
-                    <h3 className="title-box-key text-uppercase mb-2">album yêu thích</h3>
+                    <h3 className="title-box-key text-uppercase mb-3">Playlist</h3>
                     <ul className="list-unstyled row row-cols-5">
                         <li className="col">
                             <a href="">
@@ -120,8 +120,8 @@ const UserDetailPage: IUserDetailPage<IUserDetailPageProps> = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="songs">
-                    <h3 className="title-box-key text-uppercase">bài hát yêu thích</h3>
+                <div className="songs mt-5">
+                    <h3 className="title-box-key text-uppercase mb-3">bài hát yêu thích</h3>
                     <ul className="row row-cols-2 list-unstyled listbaihat">
                         <li className="col baihat">
                             <div className="baihat-chitiet">

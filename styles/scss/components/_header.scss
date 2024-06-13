@@ -5,6 +5,7 @@ $primary-color: #00704a;
         background-color: white;
         border-bottom: 1px solid #cbcbcb;
 
+
         .navbar-brand {
             color: black;
             &:hover {
@@ -29,7 +30,7 @@ $primary-color: #00704a;
             filter: invert(1);
         }
 
-        .icon {
+        .icon{
             max-width: 20px;
             fill: #ced4da;
         }

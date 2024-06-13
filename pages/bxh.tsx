@@ -11,10 +11,12 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                 <div className="col-lg-9 left-contents">
                     <div className="contents">
                         <div className="nhacviet mt-3">
-                            <a className="title-box-key text-uppercase" href="/">
-                                Bảng xếp hạng trending music
-                            </a>
-                            <Tabs defaultActiveKey="vn" id="uncontrolled-tab-example" className="mb-3">
+                            <a className="title-box-key text-uppercase" href="/">Bảng xếp hạng trending music</a>
+                            <Tabs
+                                defaultActiveKey="vn"
+                                id="uncontrolled-tab-example"
+                                className="mb-3"
+                            >
                                 <Tab eventKey="vn" title="Việt Nam">
                                     <div className="list-media">
                                         <div className="media">
@@ -24,7 +26,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                                     <div className="sort"> -</div>
                                                 </div>
                                                 <div className="song-thumb">
-                                                    <img src={images.AVATAR_1} alt="Logo" className="w-100 album-image is-50x50" />
+                                                    <img src={images.AVATAR_1} alt="Logo"
+                                                         className="w-100 album-image is-50x50" />
                                                 </div>
                                                 <div className="card-info">
                                                     <a className="title item-title" href="/">
@@ -37,7 +40,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                             </div>
                                             <div className="media-right">
                                                 <a href="" className="d-flex">
-                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo" className="song-img me-3" />
+                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo"
+                                                         className="song-img me-3" />
                                                     <img src={images.ICON_PLAY_DARK} alt="Logo" className="song-img" />
                                                 </a>
                                             </div>
@@ -49,7 +53,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                                     <div className="sort"> -</div>
                                                 </div>
                                                 <div className="song-thumb">
-                                                    <img src={images.AVATAR_1} alt="Logo" className="w-100 album-image is-50x50" />
+                                                    <img src={images.AVATAR_1} alt="Logo"
+                                                         className="w-100 album-image is-50x50" />
                                                 </div>
                                                 <div className="card-info">
                                                     <a className="title item-title" href="/">
@@ -62,7 +67,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                             </div>
                                             <div className="media-right">
                                                 <a href="" className="d-flex">
-                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo" className="song-img me-3" />
+                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo"
+                                                         className="song-img me-3" />
                                                     <img src={images.ICON_PLAY_DARK} alt="Logo" className="song-img" />
                                                 </a>
                                             </div>
@@ -74,7 +80,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                                     <div className="sort"> -</div>
                                                 </div>
                                                 <div className="song-thumb">
-                                                    <img src={images.AVATAR_1} alt="Logo" className="w-100 album-image is-50x50" />
+                                                    <img src={images.AVATAR_1} alt="Logo"
+                                                         className="w-100 album-image is-50x50" />
                                                 </div>
                                                 <div className="card-info">
                                                     <a className="title item-title" href="/">
@@ -87,7 +94,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                             </div>
                                             <div className="media-right">
                                                 <a href="" className="d-flex">
-                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo" className="song-img me-3" />
+                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo"
+                                                         className="song-img me-3" />
                                                     <img src={images.ICON_PLAY_DARK} alt="Logo" className="song-img" />
                                                 </a>
                                             </div>
@@ -99,7 +107,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                                     <div className="sort"> -</div>
                                                 </div>
                                                 <div className="song-thumb">
-                                                    <img src={images.AVATAR_1} alt="Logo" className="w-100 album-image is-50x50" />
+                                                    <img src={images.AVATAR_1} alt="Logo"
+                                                         className="w-100 album-image is-50x50" />
                                                 </div>
                                                 <div className="card-info">
                                                     <a className="title item-title" href="/">
@@ -112,7 +121,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                             </div>
                                             <div className="media-right">
                                                 <a href="" className="d-flex">
-                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo" className="song-img me-3" />
+                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo"
+                                                         className="song-img me-3" />
                                                     <img src={images.ICON_PLAY_DARK} alt="Logo" className="song-img" />
                                                 </a>
                                             </div>
@@ -124,7 +134,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                                     <div className="sort"> -</div>
                                                 </div>
                                                 <div className="song-thumb">
-                                                    <img src={images.AVATAR_1} alt="Logo" className="w-100 album-image is-50x50" />
+                                                    <img src={images.AVATAR_1} alt="Logo"
+                                                         className="w-100 album-image is-50x50" />
                                                 </div>
                                                 <div className="card-info">
                                                     <a className="title item-title" href="/">
@@ -137,7 +148,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                             </div>
                                             <div className="media-right">
                                                 <a href="" className="d-flex">
-                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo" className="song-img me-3" />
+                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo"
+                                                         className="song-img me-3" />
                                                     <img src={images.ICON_PLAY_DARK} alt="Logo" className="song-img" />
                                                 </a>
                                             </div>
@@ -153,7 +165,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                                     <div className="sort"> -</div>
                                                 </div>
                                                 <div className="song-thumb">
-                                                    <img src={images.AVATAR_2} alt="Logo" className="w-100 album-image is-50x50" />
+                                                    <img src={images.AVATAR_2} alt="Logo"
+                                                         className="w-100 album-image is-50x50" />
                                                 </div>
                                                 <div className="card-info">
                                                     <a className="title item-title" href="/">
@@ -166,7 +179,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                             </div>
                                             <div className="media-right">
                                                 <a href="" className="d-flex">
-                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo" className="song-img me-3" />
+                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo"
+                                                         className="song-img me-3" />
                                                     <img src={images.ICON_PLAY_DARK} alt="Logo" className="song-img" />
                                                 </a>
                                             </div>
@@ -178,7 +192,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                                     <div className="sort"> -</div>
                                                 </div>
                                                 <div className="song-thumb">
-                                                    <img src={images.AVATAR_2} alt="Logo" className="w-100 album-image is-50x50" />
+                                                    <img src={images.AVATAR_2} alt="Logo"
+                                                         className="w-100 album-image is-50x50" />
                                                 </div>
                                                 <div className="card-info">
                                                     <a className="title item-title" href="/">
@@ -191,7 +206,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                             </div>
                                             <div className="media-right">
                                                 <a href="" className="d-flex">
-                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo" className="song-img me-3" />
+                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo"
+                                                         className="song-img me-3" />
                                                     <img src={images.ICON_PLAY_DARK} alt="Logo" className="song-img" />
                                                 </a>
                                             </div>
@@ -203,7 +219,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                                     <div className="sort"> -</div>
                                                 </div>
                                                 <div className="song-thumb">
-                                                    <img src={images.AVATAR_2} alt="Logo" className="w-100 album-image is-50x50" />
+                                                    <img src={images.AVATAR_2} alt="Logo"
+                                                         className="w-100 album-image is-50x50" />
                                                 </div>
                                                 <div className="card-info">
                                                     <a className="title item-title" href="/">
@@ -216,7 +233,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                             </div>
                                             <div className="media-right">
                                                 <a href="" className="d-flex">
-                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo" className="song-img me-3" />
+                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo"
+                                                         className="song-img me-3" />
                                                     <img src={images.ICON_PLAY_DARK} alt="Logo" className="song-img" />
                                                 </a>
                                             </div>
@@ -228,7 +246,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                                     <div className="sort"> -</div>
                                                 </div>
                                                 <div className="song-thumb">
-                                                    <img src={images.AVATAR_2} alt="Logo" className="w-100 album-image is-50x50" />
+                                                    <img src={images.AVATAR_2} alt="Logo"
+                                                         className="w-100 album-image is-50x50" />
                                                 </div>
                                                 <div className="card-info">
                                                     <a className="title item-title" href="/">
@@ -241,7 +260,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                             </div>
                                             <div className="media-right">
                                                 <a href="" className="d-flex">
-                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo" className="song-img me-3" />
+                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo"
+                                                         className="song-img me-3" />
                                                     <img src={images.ICON_PLAY_DARK} alt="Logo" className="song-img" />
                                                 </a>
                                             </div>
@@ -253,7 +273,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                                     <div className="sort"> -</div>
                                                 </div>
                                                 <div className="song-thumb">
-                                                    <img src={images.AVATAR_2} alt="Logo" className="w-100 album-image is-50x50" />
+                                                    <img src={images.AVATAR_2} alt="Logo"
+                                                         className="w-100 album-image is-50x50" />
                                                 </div>
                                                 <div className="card-info">
                                                     <a className="title item-title" href="/">
@@ -266,7 +287,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                             </div>
                                             <div className="media-right">
                                                 <a href="" className="d-flex">
-                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo" className="song-img me-3" />
+                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo"
+                                                         className="song-img me-3" />
                                                     <img src={images.ICON_PLAY_DARK} alt="Logo" className="song-img" />
                                                 </a>
                                             </div>
@@ -282,7 +304,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                                     <div className="sort"> -</div>
                                                 </div>
                                                 <div className="song-thumb">
-                                                    <img src={images.AVATAR_3} alt="Logo" className="w-100 album-image is-50x50" />
+                                                    <img src={images.AVATAR_3} alt="Logo"
+                                                         className="w-100 album-image is-50x50" />
                                                 </div>
                                                 <div className="card-info">
                                                     <a className="title item-title" href="/">
@@ -295,7 +318,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                             </div>
                                             <div className="media-right">
                                                 <a href="" className="d-flex">
-                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo" className="song-img me-3" />
+                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo"
+                                                         className="song-img me-3" />
                                                     <img src={images.ICON_PLAY_DARK} alt="Logo" className="song-img" />
                                                 </a>
                                             </div>
@@ -307,7 +331,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                                     <div className="sort"> -</div>
                                                 </div>
                                                 <div className="song-thumb">
-                                                    <img src={images.AVATAR_3} alt="Logo" className="w-100 album-image is-50x50" />
+                                                    <img src={images.AVATAR_3} alt="Logo"
+                                                         className="w-100 album-image is-50x50" />
                                                 </div>
                                                 <div className="card-info">
                                                     <a className="title item-title" href="/">
@@ -320,7 +345,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                             </div>
                                             <div className="media-right">
                                                 <a href="" className="d-flex">
-                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo" className="song-img me-3" />
+                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo"
+                                                         className="song-img me-3" />
                                                     <img src={images.ICON_PLAY_DARK} alt="Logo" className="song-img" />
                                                 </a>
                                             </div>
@@ -332,7 +358,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                                     <div className="sort"> -</div>
                                                 </div>
                                                 <div className="song-thumb">
-                                                    <img src={images.AVATAR_3} alt="Logo" className="w-100 album-image is-50x50" />
+                                                    <img src={images.AVATAR_3} alt="Logo"
+                                                         className="w-100 album-image is-50x50" />
                                                 </div>
                                                 <div className="card-info">
                                                     <a className="title item-title" href="/">
@@ -345,7 +372,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                             </div>
                                             <div className="media-right">
                                                 <a href="" className="d-flex">
-                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo" className="song-img me-3" />
+                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo"
+                                                         className="song-img me-3" />
                                                     <img src={images.ICON_PLAY_DARK} alt="Logo" className="song-img" />
                                                 </a>
                                             </div>
@@ -357,7 +385,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                                     <div className="sort"> -</div>
                                                 </div>
                                                 <div className="song-thumb">
-                                                    <img src={images.AVATAR_3} alt="Logo" className="w-100 album-image is-50x50" />
+                                                    <img src={images.AVATAR_3} alt="Logo"
+                                                         className="w-100 album-image is-50x50" />
                                                 </div>
                                                 <div className="card-info">
                                                     <a className="title item-title" href="/">
@@ -370,7 +399,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                             </div>
                                             <div className="media-right">
                                                 <a href="" className="d-flex">
-                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo" className="song-img me-3" />
+                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo"
+                                                         className="song-img me-3" />
                                                     <img src={images.ICON_PLAY_DARK} alt="Logo" className="song-img" />
                                                 </a>
                                             </div>
@@ -382,7 +412,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                                     <div className="sort"> -</div>
                                                 </div>
                                                 <div className="song-thumb">
-                                                    <img src={images.AVATAR_3} alt="Logo" className="w-100 album-image is-50x50" />
+                                                    <img src={images.AVATAR_3} alt="Logo"
+                                                         className="w-100 album-image is-50x50" />
                                                 </div>
                                                 <div className="card-info">
                                                     <a className="title item-title" href="/">
@@ -395,7 +426,8 @@ const Bxh: IBxhPage<IBxhPageProps> = () => {
                                             </div>
                                             <div className="media-right">
                                                 <a href="" className="d-flex">
-                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo" className="song-img me-3" />
+                                                    <img src={images.ICON_ADD_PLAYLIST} alt="Logo"
+                                                         className="song-img me-3" />
                                                     <img src={images.ICON_PLAY_DARK} alt="Logo" className="song-img" />
                                                 </a>
                                             </div>
