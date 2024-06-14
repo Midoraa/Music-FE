@@ -4,6 +4,7 @@ import { ILoginPageProps, ILoginPage } from '@interfaces/pages/login';
 import { images } from '@utils/constants';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
+import Swal from 'sweetalert2';
 
 const LoginPage: ILoginPage<ILoginPageProps> = () => {
 
@@ -25,8 +26,21 @@ const LoginPage: ILoginPage<ILoginPageProps> = () => {
             const data = await response.json();
             localStorage.setItem('curUser', JSON.stringify(data));
             router.push('/');
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Login successfully",
+                showConfirmButton: false,
+                timer: 1500
+            });
         } else {
-            alert('Invalid username or password');
+            Swal.fire({
+                position: "top-end",
+                icon: "error",
+                title: "Invalid username or password",
+                showConfirmButton: false,
+                timer: 1500
+            });
         }
     };
 
