@@ -1,13 +1,40 @@
 import Head from 'next/head';
 import { images } from '../../utils/constants';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
+import { Dropdown } from 'react-bootstrap';
+
+
+interface User {
+    name: string;
+    avatar: string;
+}
 const Header: IHeaderComponent<IHeaderComponentProps> = (props) => {
 
     const {isShow} = props
+
+    const [curUser, setCurUser] = useState<User | null>(null);
+    const router = useRouter();
+
+    useEffect(() => {
+        const user = localStorage.getItem('curUser');
+        if (user) {
+            setCurUser(JSON.parse(user));
+        }
+    }, [router.pathname]);
+
+    const handleLogout = () => {
+        localStorage.removeItem('curUser');
+        setCurUser(null);
+        router.push('/'); // Redirect to login page or homepage
+    };
+
     if (isShow){
         return (
             <>
                 <Head>
-                    <title>Training Web</title>
+                    <title>Midora Music</title>
                     <link rel="icon" type="image/png" href="/favicon.ico" />
                 </Head>
                 <div>
@@ -45,6 +72,41 @@ const Header: IHeaderComponent<IHeaderComponentProps> = (props) => {
                                                aria-label="Search" />
                                         <button className="btn btn-outline-success" type="submit">Search</button>
                                     </form>
+                                    <div className="list-button">
+                                        {curUser ? (
+                                            <div className="user-info d-flex">
+                                                <img src={curUser.message.avatar} alt="" className="avatar" />
+                                                <Dropdown>
+                                                    <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                        <span>{curUser.message.name}</span>
+                                                    </Dropdown.Toggle>
+
+                                                    <Dropdown.Menu>
+                                                        <Dropdown.Item>Trang cá nhân</Dropdown.Item>
+                                                        <Dropdown.Item>Đổi mật khẩu</Dropdown.Item>
+                                                        <Dropdown.Item onClick={handleLogout}>Đăng xuất</Dropdown.Item>
+                                                    </Dropdown.Menu>
+                                                </Dropdown>
+                                            </div>
+                                        ) : (
+                                            <>
+                                                <div className="btn btn-login">
+                                                    <Link href="/login">Đăng nhập</Link>
+                                                </div>
+                                                <div className="cta">
+                                                <span className="hover-underline-animation">
+                                                    <Link href="/register">Đăng ký</Link>
+                                                </span>
+                                                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg"
+                                                         width="30" height="10" viewBox="0 0 46 16">
+                                                        <path id="Path_10" fill="#00704a" data-name="Path 10"
+                                                              d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                                                              transform="translate(30)"></path>
+                                                    </svg>
+                                                </div>
+                                            </>
+                                        )}
+                                    </div>
                                 </div>
                             </div>
                         </nav>

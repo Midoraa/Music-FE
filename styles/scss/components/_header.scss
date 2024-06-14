@@ -34,5 +34,86 @@ $primary-color: #00704a;
             max-width: 20px;
             fill: #ced4da;
         }
+        .list-button{
+            display: flex;
+            .btn-login{
+                background: #00704a;
+                color: white;
+                margin-right: 10px;
+                &:hover{
+                    background: white;
+                    border: 1px solid #00704a;
+                    color: #00704a;
+                }
+            }
+            .cta {
+                border: none;
+                background: none;
+                cursor: pointer;
+                align-self: center;
+            }
+
+            .cta span {
+                letter-spacing: 4px;
+                font-size: 14px;
+                padding-right: 15px;
+                text-transform: uppercase;
+            }
+
+            .cta svg {
+                transform: translateX(-8px);
+                transition: all 0.3s ease;
+            }
+
+            .cta:hover svg {
+                transform: translateX(0);
+            }
+
+            .cta:active svg {
+                transform: scale(0.9);
+            }
+
+            .hover-underline-animation {
+                position: relative;
+                color: #00704a;
+            }
+
+            .hover-underline-animation:after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: #00704a;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+            }
+
+            .cta:hover .hover-underline-animation:after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+            .user-info{
+                .avatar{
+                    width: 40px;
+                    height: 40px;
+                    object-fit: cover;
+                    border-radius: 100%;
+                    border: 2px solid #00704a;
+                    margin-right: 10px;
+                }
+                #dropdown-basic{
+                    background: white;
+                    color: #00704a;
+                    border: none;
+                    &:focus{
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
     }
 }
