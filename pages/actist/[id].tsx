@@ -1,10 +1,8 @@
 // IActistDetailPage.tsx
 
 import { GetServerSideProps } from 'next';
-import { IActistDetailPageProps } from '@interfaces/pages/actistDetail'; // Import interface for props
-import { images } from '@utils/constants';
+import { IActistDetailPageProps } from '@interfaces/pages/actistDetail';
 import Pagination from 'react-bootstrap/Pagination';
-import { useRouter } from 'next/router';
 import { getArtistById } from '../../services/actistService';
 
 const IActistDetailPage: React.FC<IActistDetailPageProps> = ({ artist }) => {

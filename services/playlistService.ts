@@ -36,3 +36,14 @@ export const getSongByPlaylistId = async (playlistId) => {
     const response = await axios.get(`${API_URL}/getSongsById/?playlistId=${playlistId}`);
     return response;
 };
+
+export const getPlaylistsByUserId = async (userId) => {
+    const response = await axios.get(`${API_URL}/getPlaylistsByUserId/${userId}`);
+    return response;
+};
+
+
+export const getSongsByPlaylistId = async (playlistId) => {
+    const response = await axios.get(`${API_URL}/getSongsById?playlistId=${playlistId}`);
+    return response.data;
+};
