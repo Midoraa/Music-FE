@@ -1,4 +1,4 @@
-import { ISongDetailPageProps, ISongDetailPage } from '@interfaces/pages/songDetail';
+import { ISongDetailPageProps, ISongDetailPage, ISongDetailPageState } from '@interfaces/pages/songDetail';
 import { images } from '@utils/constants';
 import {closestCenter, DndContext} from "@dnd-kit/core";
 import { SortableContext, verticalListSortingStrategy, arrayMove, useSortable } from '@dnd-kit/sortable';
@@ -8,16 +8,51 @@ import Pagination from 'react-bootstrap/Pagination';
 import { getFirstTenSongs } from '../../services/songService';
 import 'react-h5-audio-player/lib/styles.css';
 import AudioPlayer from 'react-h5-audio-player';
+// import { useDispatch } from 'react-redux';
+// import { fetchPlayLists } from '@redux/actions/api';
 
 const SongDetailPage: ISongDetailPage<ISongDetailPageProps> = () => {
+    // const dispatch = useDispatch();
+    // const [state, setState] = useState<ISongDetailPageState>({
+    //     isListSongs: [],
+    //     isPlayIngs: undefined,
+    //     curSongDetails: undefined,
+    //     playListUrls: ''
+    // })
+    // const {isListSongs, playListUrls, taskss, curSongDetails, isPlayIngs} = state;
 
-    // @ts-ignore
+    const [currentSong,setCurentSong] = useState(0);
     const [firstTenSongs, setFirstTenSongs] = useState([]);
     const [playListUrl, setPlayListUrl] = useState([""]);
     const [tasks, setTasks] = useState([]);
     const [curSongDetail, setCurSongDetail] = useState();
+    const [isPlaying, setIsPlaying] = useState(false);
+
+    // const testAPI = async () => {
+    //     dispatch(
+    //          await fetchPlayLists((result: ISongsAPIDataRes | IErrorAPIRes | null) => {
+    //              const {data} = (result as ISongsAPIDataRes).results
+    //              const dataPLayList =  data.map((songs) => {
+    //                  return {
+    //                      id: songs._id, // Sử dụng index của mảng songs làm id
+    //                      url: "https://img.icons8.com/?size=60&id=Lodz6ohohSjZ&format=png", // Giả sử imageUrl là trường chứa đường dẫn hình ảnh
+    //                      title: songs.title,
+    //                      artist: songs.artist,
+    //                      coverImg: songs.coverImg
+    //                  }
+    //              })
+    //              const playlistUrls = isListSongs.map((song) => song.audioLink);
+    //
+    //              setState((prevState) => ({
+    //                  ...prevState,
+    //                  taskss: dataPLayList,
+    //              }))
+    //          })
+    //     )
+    // }
 
     useEffect(() => {
+        // testAPI()
         const fetchFirstTenSongs = async () => {
             try {
                 const songs = await getFirstTenSongs();
@@ -40,7 +75,7 @@ const SongDetailPage: ISongDetailPage<ISongDetailPageProps> = () => {
         fetchFirstTenSongs();
     }, []);
 
-    const [currentSong,setCurentSong] = useState(0);
+
     var PREVIOUS_SONG=-1;
     const handleNextSong=()=>{
         console.log("NEXT_SONG_FUNCTION")
@@ -70,12 +105,14 @@ const SongDetailPage: ISongDetailPage<ISongDetailPageProps> = () => {
     }
     const hanldeOnPause = () => {
         console.log("ON_PAUSE_FUNCTION")
+        setIsPlaying(false);
     }
     const hanldeOnPlay = () => {
         console.log(playListUrl);
         console.log("index",currentSong);
         setCurSongDetail(tasks[currentSong])
         console.log("ON_PLAY_FUNCTION")
+        setIsPlaying(true);
     }
     const hanldeOnError = () => {
         console.log("ON_ERROR_FUNCTION")
@@ -117,7 +154,11 @@ const SongDetailPage: ISongDetailPage<ISongDetailPageProps> = () => {
                                     </div>
                                     <p className="played">2000 lượt phát</p>
                                 </div>
-                                <img src={curSongDetail?.coverImg} alt="songImage" className="song-image" />
+                                <img
+                                    src={curSongDetail?.coverImg}
+                                    alt="songImage"
+                                    className={`song-image ${isPlaying ? 'playing' : ''}`}
+                                />
                             </div>
                         </div>
                         <AudioPlayer

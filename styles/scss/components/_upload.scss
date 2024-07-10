@@ -1,0 +1,33 @@
+.upload-container{
+    h2{
+        color: #00704a;
+    }
+    .input {
+        max-width: 190px;
+        display: none;
+    }
+
+    .labelFile {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 250px;
+        height: 190px;
+        border: 2px dashed #00704a;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+        color: #00704a;
+        cursor: pointer;
+    }
+    button{
+        background: #00704a;
+        color: white;
+        margin-top: 10px;
+    }
+    p{
+
+    }
+
+}

@@ -8,3 +8,10 @@ export const login = async (data: ILoginDataAPI) => {
         throw err;
     }
 };
+export const songs = async ()=> {
+    try {
+        return await axios.get<ISongsAPIDataRes>(`${routes.API.PLAY_LISTS.href}/find/firstTenSongs`)
+    }catch (err){
+        throw err;
+    }
+}

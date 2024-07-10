@@ -1,7 +1,29 @@
 import { IUserDetailPageProps, IUserDetailPage } from '@interfaces/pages/userDetail';
 import { images } from '@utils/constants';
+import { useEffect, useState } from 'react';
 
+
+interface IUser {
+    name: string;
+    username: string;
+    email: string;
+    avatar: string;
+}
 const UserDetailPage: IUserDetailPage<IUserDetailPageProps> = () => {
+
+    const [user, setUser] = useState<IUser | null>(null);
+
+    useEffect(() => {
+        // Lấy dữ liệu người dùng từ localStorage
+        const userData = localStorage.getItem('curUser');
+        if (userData) {
+            setUser(JSON.parse(userData));
+        }
+    }, []);
+
+    if (!user) {
+        return <p>No user data available.</p>;
+    }
     return (
         <div className="user__detail-container">
             <div className="top-contents position-relative">
@@ -11,14 +33,13 @@ const UserDetailPage: IUserDetailPage<IUserDetailPageProps> = () => {
                         <div className="d-flex main-info align-items-center">
                             <img
                                 className="avatar"
-                                src="https://avatar-ex-swe.nixcdn.com/avatar/2022/08/23/b/8/3/d/1661244177949_180.jpg"
+                                src={user.avatar}
                                 alt="Avatar"
                             />
                             <div className="user-details">
-                                <h3 className="name">Nguyễn Thị Mỹ Duyên</h3>
+                                <h3 className="name">{user.name}</h3>
                                 <div className="box_detail_user">
-                                    <p className="detail-item">ID: 12345</p>
-                                    <p className="detail-item">Email: nguyenduyen@gmail.com</p>
+                                    <p className="detail-item">Email: {user.email}</p>
                                     <p className="detail-item">Country: Việt Nam</p>
                                 </div>
                             </div>
