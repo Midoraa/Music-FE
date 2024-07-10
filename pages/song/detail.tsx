@@ -8,18 +8,9 @@ import Pagination from 'react-bootstrap/Pagination';
 import { getFirstTenSongs } from '../../services/songService';
 import 'react-h5-audio-player/lib/styles.css';
 import AudioPlayer from 'react-h5-audio-player';
-// import { useDispatch } from 'react-redux';
-// import { fetchPlayLists } from '@redux/actions/api';
+import { getSongsByPlaylistId } from '../../services/playlistService';
 
 const SongDetailPage: ISongDetailPage<ISongDetailPageProps> = () => {
-    // const dispatch = useDispatch();
-    // const [state, setState] = useState<ISongDetailPageState>({
-    //     isListSongs: [],
-    //     isPlayIngs: undefined,
-    //     curSongDetails: undefined,
-    //     playListUrls: ''
-    // })
-    // const {isListSongs, playListUrls, taskss, curSongDetails, isPlayIngs} = state;
 
     const [currentSong,setCurentSong] = useState(0);
     const [firstTenSongs, setFirstTenSongs] = useState([]);
@@ -28,38 +19,16 @@ const SongDetailPage: ISongDetailPage<ISongDetailPageProps> = () => {
     const [curSongDetail, setCurSongDetail] = useState();
     const [isPlaying, setIsPlaying] = useState(false);
 
-    // const testAPI = async () => {
-    //     dispatch(
-    //          await fetchPlayLists((result: ISongsAPIDataRes | IErrorAPIRes | null) => {
-    //              const {data} = (result as ISongsAPIDataRes).results
-    //              const dataPLayList =  data.map((songs) => {
-    //                  return {
-    //                      id: songs._id, // Sử dụng index của mảng songs làm id
-    //                      url: "https://img.icons8.com/?size=60&id=Lodz6ohohSjZ&format=png", // Giả sử imageUrl là trường chứa đường dẫn hình ảnh
-    //                      title: songs.title,
-    //                      artist: songs.artist,
-    //                      coverImg: songs.coverImg
-    //                  }
-    //              })
-    //              const playlistUrls = isListSongs.map((song) => song.audioLink);
-    //
-    //              setState((prevState) => ({
-    //                  ...prevState,
-    //                  taskss: dataPLayList,
-    //              }))
-    //          })
-    //     )
-    // }
-
     useEffect(() => {
         // testAPI()
         const fetchFirstTenSongs = async () => {
             try {
-                const songs = await getFirstTenSongs();
+                const songs = await getSongsByPlaylistId("666bad6014ce9adf6661b5e0");
+                console.log(songs);
                 setFirstTenSongs(songs);
                 const newTasks = songs.map((song:any) => ({
                     id: song._id, // Sử dụng index của mảng songs làm id
-                    url: "https://img.icons8.com/?size=60&id=Lodz6ohohSjZ&format=png", // Giả sử imageUrl là trường chứa đường dẫn hình ảnh
+                    url: "https://img.icons8.com/?size=60&id=Lodz6ohohSjZ&format=png",
                     title: song.title,
                     artist: song.artist,
                     coverImg: song.coverImg

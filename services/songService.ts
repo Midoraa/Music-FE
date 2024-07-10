@@ -44,3 +44,8 @@ export const searchSong = async (keyword) => {
     const response = await axios.get(`${API_URL}/search?search=${keyword}`);
     return response;
 };
+
+export const getTop10 = async () => {
+    const response = await axios.get(`${API_URL}/top10Played`);
+    return response;
+};
