@@ -52,10 +52,10 @@ const Header: IHeaderComponent<IHeaderComponentProps> = (props) => {
                                 <div className="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
                                     <ul className="navbar-nav ml-auto">
                                         <li className="nav-item active">
-                                            <a className="nav-link" href="/">Khám phá</a>
+                                            <div className="nav-link"><Link href="/">Khám phá</Link></div>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="/song/detail">Bài hát</a>
+                                            <div className="nav-link"><Link href="/song/detail">Bài hát</Link></div>
                                         </li>
                                         <li className="nav-item">
                                             <a className="nav-link" href="/playlist">Playlist</a>
@@ -75,15 +75,16 @@ const Header: IHeaderComponent<IHeaderComponentProps> = (props) => {
                                     <div className="list-button">
                                         {curUser ? (
                                             <div className="user-info d-flex">
-                                                <img src={curUser.message.avatar} alt="" className="avatar" />
+                                                <img src={curUser.avatar} alt="" className="avatar" />
                                                 <Dropdown>
                                                     <Dropdown.Toggle variant="success" id="dropdown-basic">
-                                                        <span>{curUser.message.name}</span>
+                                                        <span>{curUser.name}</span>
                                                     </Dropdown.Toggle>
 
                                                     <Dropdown.Menu>
-                                                        <Dropdown.Item>Trang cá nhân</Dropdown.Item>
-                                                        <Dropdown.Item>Đổi mật khẩu</Dropdown.Item>
+                                                        <Dropdown.Item>
+                                                            <Link href="/user/detail">Trang cá nhân</Link>
+                                                        </Dropdown.Item>
                                                         <Dropdown.Item onClick={handleLogout}>Đăng xuất</Dropdown.Item>
                                                     </Dropdown.Menu>
                                                 </Dropdown>

@@ -48,7 +48,11 @@ const LOGIN_API: IRouteConstant = {
 const PROFILE_API: IRouteConstant = {
     href: 'profile',
 };
+const PLAY_LIST_API: IRouteConstant = {
+    href: 'songs'
+}
 export const API = {
     LOGIN: LOGIN_API,
     PROFILE: PROFILE_API,
+    PLAY_LISTS: PLAY_LIST_API
 };
